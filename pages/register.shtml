@@ -18,12 +18,16 @@
     
       <fieldset>
         <legend>Ваша учетная запись</legend>
-        <label for="contact">Email или номер телефона</label>
+        <label for="telephone">Номер телефона</label>
+        <input id="telephone" name="telephone" type="text" 
+               inputmode="tel" placeholder="+7(xxx)xxx-xx-xx"
+                pattern="(^\+?\d[\d\s\-\(\)]{6,}$)" title="Номер телефона" required/>
+        <label for="contact">Электронная почта</label>
         <input id="contact" name="contact" type="text"
-               inputmode="tel"
-               placeholder="+7 (999) 999-99-99 или example@mail.ru"
-               pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)|(^\+?\d[\d\s\-\(\)]{6,}$)"
-               title="Email или номер телефона" required/>
+               inputmode="email"
+               placeholder="example@mail.ru"
+               pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)"
+               title="Электронная почта" required/>
 
         <label for="password">Пароль</label>
         <input id="password" name="password" type="password" required

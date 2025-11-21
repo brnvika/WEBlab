@@ -58,35 +58,48 @@
                 </tr>
                 </tbody>
             </table>
+        </article>
+        <article>
+            <div class="shop-full-description">
+                <h3>Подробная информация о BALDININI</h3>
+                <p>BALDININI - итальянский бренд, специализирующийся на производстве элитной обуви. Компания была основана в 1910 году в городе Сан-Мауро-Пасколи, который известен во всём мире своими высококачественными обувными фабриками. В 1970-х годах в компанию пришёл Джимми Балдинини. У компании 100 магазинов Baldinini по всему миру, в ней работает 250 сотрудников.</p>
+                <p>Особое внимание BALDININI уделяет созданию максимально удобной колодки и использованию натуральных материалов, что гарантирует долговечность и приятные ощущения при носке. Ассортимент включает как базовые модели для повседневной жизни, так и изысканные варианты для особых случаев, дополненные стильными аксессуарами, позволяющими завершить любой образ.</p>
+            </div>
+            <div class="shop-in-trk">
+                <a href="../images/atriumBaldinini.jpg" target="_blank"><img src="../images/atriumBaldinini.jpg" alt="Витрина магазина BALDININI в ТРК Атриум"></a>
+                <p><em>ТРК Атриум, 2 этаж</em></p>
+            </div>
+        </article>
+        <div class="shop-bottom-section">
             <form class="shop-review-form" action="#" method="post" novalidate>
                 <h2>Оставить отзыв о магазине</h2>
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы магазина</span>
                     <div class="rating-area">
-                        <input type="radio" id="store-star-5" name="rating" value="5">
+                        <input type="radio" id="store-star-5" name="rating-store" value="5">
                         <label for="store-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="store-star-4" name="rating" value="4">
+                        <input type="radio" id="store-star-4" name="rating-store" value="4">
                         <label for="store-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="store-star-3" name="rating" value="3">
+                        <input type="radio" id="store-star-3" name="rating-store" value="3">
                         <label for="store-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="store-star-2" name="rating" value="2">
+                        <input type="radio" id="store-star-2" name="rating-store" value="2">
                         <label for="store-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="store-star-1" name="rating" value="1">
+                        <input type="radio" id="store-star-1" name="rating-store" value="1">
                         <label for="store-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы консультанта</span>
                     <div class="rating-area">
-                        <input type="radio" id="consultant-star-5" name="rating" value="5">
+                        <input type="radio" id="consultant-star-5" name="rating-consultant" value="5">
                         <label for="consultant-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="consultant-star-4" name="rating" value="4">
+                        <input type="radio" id="consultant-star-4" name="rating-consultant" value="4">
                         <label for="consultant-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="consultant-star-3" name="rating" value="3">
+                        <input type="radio" id="consultant-star-3" name="rating-consultant" value="3">
                         <label for="consultant-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="consultant-star-2" name="rating" value="2">
+                        <input type="radio" id="consultant-star-2" name="rating-consultant" value="2">
                         <label for="consultant-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="consultant-star-1" name="rating" value="1">
+                        <input type="radio" id="consultant-star-1" name="rating-consultant" value="1">
                         <label for="consultant-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
@@ -94,15 +107,15 @@
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы кассира</span>
                     <div class="rating-area">
-                        <input type="radio" id="cashier-star-5" name="rating" value="5">
+                        <input type="radio" id="cashier-star-5" name="rating-cashier" value="5">
                         <label for="cashier-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="cashier-star-4" name="rating" value="4">
+                        <input type="radio" id="cashier-star-4" name="rating-cashier" value="4">
                         <label for="cashier-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="cashier-star-3" name="rating" value="3">
+                        <input type="radio" id="cashier-star-3" name="rating-cashier" value="3">
                         <label for="cashier-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="cashier-star-2" name="rating" value="2">
+                        <input type="radio" id="cashier-star-2" name="rating-cashier" value="2">
                         <label for="cashier-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="cashier-star-1" name="rating" value="1">
+                        <input type="radio" id="cashier-star-1" name="rating-cashier" value="1">
                         <label for="cashier-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
@@ -110,15 +123,15 @@
                 <label class="review-field">
                     <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
                     <div class="rating-area">
-                        <input type="radio" id="cleanliness-star-5" name="rating" value="5">
+                        <input type="radio" id="cleanliness-star-5" name="rating-cleanliness" value="5">
                         <label for="cleanliness-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="cleanliness-star-4" name="rating" value="4">
+                        <input type="radio" id="cleanliness-star-4" name="rating-cleanliness" value="4">
                         <label for="cleanliness-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="cleanliness-star-3" name="rating" value="3">
+                        <input type="radio" id="cleanliness-star-3" name="rating-cleanliness" value="3">
                         <label for="cleanliness-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="cleanliness-star-2" name="rating" value="2">
+                        <input type="radio" id="cleanliness-star-2" name="rating-cleanliness" value="2">
                         <label for="cleanliness-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="cleanliness-star-1" name="rating" value="1">
+                        <input type="radio" id="cleanliness-star-1" name="rating-cleanliness" value="1">
                         <label for="cleanliness-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
@@ -132,22 +145,11 @@
                     <button type="submit">Отправить отзыв</button>
                 </div>
             </form>
-        </article>
-        <article>
-            <div class="shop-full-description">
-                <h3>Подробная информация о BALDININI</h3>
-                <p>BALDININI - итальянский бренд, специализирующийся на производстве элитной обуви. Компания была основана в 1910 году в городе Сан-Мауро-Пасколи, который известен во всём мире своими высококачественными обувными фабриками. В 1970-х годах в компанию пришёл Джимми Балдинини. У компании 100 магазинов Baldinini по всему миру, в ней работает 250 сотрудников.</p>
-                <p>Особое внимание BALDININI уделяет созданию максимально удобной колодки и использованию натуральных материалов, что гарантирует долговечность и приятные ощущения при носке. Ассортимент включает как базовые модели для повседневной жизни, так и изысканные варианты для особых случаев, дополненные стильными аксессуарами, позволяющими завершить любой образ.</p>
+            <div class="shop-banner">
+                <a href="https://baldinini.ru/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу акции" class="banner">
+                    <img src="../images/saleBaldinini.jpg" alt="Новая коллекция обуви и сумок BALDININI" loading="lazy">
+                </a>
             </div>
-            <div class="shop-in-trk">
-                <a href="../images/atriumBaldinini.jpg" target="_blank"><img src="../images/atriumBaldinini.jpg" alt="Витрина магазина BALDININI в ТРК Атриум"></a>
-                <p><em>ТРК Атриум, 2 этаж</em></p>
-            </div>
-        </article>
-        <div class="shop-banner">
-            <a href="https://baldinini.ru/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу акции" class="banner">
-                <img src="../images/saleBaldinini.jpg" alt="Новая коллекция обуви и сумок BALDININI" loading="lazy">
-            </a>
         </div>
     </div>
 </main>

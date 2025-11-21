@@ -1,11 +1,14 @@
 ﻿main {
     display: flex;
     min-height: 100%;
+    justify-content: center;
 }
 
-section {
+main section {
     flex-grow: 1;
-    margin-right: 15px;
+    max-width: 920px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .history-content1 {
@@ -22,8 +25,9 @@ ul {
     width: 350px;
     margin-right: 5px;
     flex-shrink: 0;
-    border-radius: 5%;
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3)
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+    margin-top: 17px;
 }
 
 .history-content2 {
@@ -37,8 +41,21 @@ ul {
     margin-left: 10px;
     margin-right: 10px;
     flex-shrink: 0;
-    border-radius: 5%;
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3)
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+    margin-top: 20px;
+}
+
+.history-content1 ul {
+    padding-left: 20px;
+}
+
+.history-content2 ul {
+    padding-left: 0;
+}
+
+h3, h4 {
+    margin-bottom: 6px;
 }
 
 

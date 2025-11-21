@@ -64,80 +64,6 @@
                 </tr>
                 </tbody>
             </table>
-        <form class="shop-review-form" action="#" method="post" novalidate>
-            <h2>Оставить отзыв о магазине</h2>
-            <label class="review-field">
-                <span class="criterion-title">Оцените качество работы магазина</span>
-                <div class="rating-area">
-                    <input type="radio" id="store-star-5" name="rating" value="5">
-                    <label for="store-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="store-star-4" name="rating" value="4">
-                    <label for="store-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="store-star-3" name="rating" value="3">
-                    <label for="store-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="store-star-2" name="rating" value="2">
-                    <label for="store-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="store-star-1" name="rating" value="1">
-                    <label for="store-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-            <label class="review-field">
-                <span class="criterion-title">Оцените качество работы консультанта</span>
-                <div class="rating-area">
-                    <input type="radio" id="consultant-star-5" name="rating" value="5">
-                    <label for="consultant-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="consultant-star-4" name="rating" value="4">
-                    <label for="consultant-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="consultant-star-3" name="rating" value="3">
-                    <label for="consultant-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="consultant-star-2" name="rating" value="2">
-                    <label for="consultant-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="consultant-star-1" name="rating" value="1">
-                    <label for="consultant-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-
-            <label class="review-field">
-                <span class="criterion-title">Оцените качество работы кассира</span>
-                <div class="rating-area">
-                    <input type="radio" id="cashier-star-5" name="rating" value="5">
-                    <label for="cashier-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="cashier-star-4" name="rating" value="4">
-                    <label for="cashier-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="cashier-star-3" name="rating" value="3">
-                    <label for="cashier-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="cashier-star-2" name="rating" value="2">
-                    <label for="cashier-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="cashier-star-1" name="rating" value="1">
-                    <label for="cashier-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-
-            <label class="review-field">
-                <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
-                <div class="rating-area">
-                    <input type="radio" id="cleanliness-star-5" name="rating" value="5">
-                    <label for="cleanliness-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="cleanliness-star-4" name="rating" value="4">
-                    <label for="cleanliness-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="cleanliness-star-3" name="rating" value="3">
-                    <label for="cleanliness-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="cleanliness-star-2" name="rating" value="2">
-                    <label for="cleanliness-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="cleanliness-star-1" name="rating" value="1">
-                    <label for="cleanliness-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-
-            <label class="review-field">
-                <span class="criterion-title">Комментарий</span>
-                <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
-            </label>
-
-            <div class="form-actions">
-                <button type="submit">Отправить отзыв</button>
-            </div>
-        </form>
         </article>
         <article>
             <div class="shop-full-description">
@@ -156,11 +82,86 @@
                 <p><em>ТРК Атриум, 2 этаж</em></p>
             </div>
         </article>
+        <div class="shop-bottom-section">
+            <form class="shop-review-form" action="#" method="post" novalidate>
+                <h2>Оставить отзыв о магазине</h2>
+            <label class="review-field">
+                <span class="criterion-title">Оцените качество работы магазина</span>
+                <div class="rating-area">
+                    <input type="radio" id="store-star-5" name="rating-store" value="5">
+                    <label for="store-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="store-star-4" name="rating-store" value="4">
+                    <label for="store-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="store-star-3" name="rating-store" value="3">
+                    <label for="store-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="store-star-2" name="rating-store" value="2">
+                    <label for="store-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="store-star-1" name="rating-store" value="1">
+                    <label for="store-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
+            <label class="review-field">
+                <span class="criterion-title">Оцените качество работы консультанта</span>
+                <div class="rating-area">
+                    <input type="radio" id="consultant-star-5" name="rating-consultant" value="5">
+                    <label for="consultant-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="consultant-star-4" name="rating-consultant" value="4">
+                    <label for="consultant-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="consultant-star-3" name="rating-consultant" value="3">
+                    <label for="consultant-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="consultant-star-2" name="rating-consultant" value="2">
+                    <label for="consultant-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="consultant-star-1" name="rating-consultant" value="1">
+                    <label for="consultant-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
 
-        <div class="banner">
-            <a href="https://karatov.ru/sale/" target="_blank" rel="noopener noreferrer" title="Перейти к акциям и специальным предложениям Karatov">
+            <label class="review-field">
+                <span class="criterion-title">Оцените качество работы кассира</span>
+                <div class="rating-area">
+                    <input type="radio" id="cashier-star-5" name="rating-cashier" value="5">
+                    <label for="cashier-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="cashier-star-4" name="rating-cashier" value="4">
+                    <label for="cashier-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="cashier-star-3" name="rating-cashier" value="3">
+                    <label for="cashier-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="cashier-star-2" name="rating-cashier" value="2">
+                    <label for="cashier-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="cashier-star-1" name="rating-cashier" value="1">
+                    <label for="cashier-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
+
+            <label class="review-field">
+                <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                <div class="rating-area">
+                    <input type="radio" id="cleanliness-star-5" name="rating-cleanliness" value="5">
+                    <label for="cleanliness-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="cleanliness-star-4" name="rating-cleanliness" value="4">
+                    <label for="cleanliness-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="cleanliness-star-3" name="rating-cleanliness" value="3">
+                    <label for="cleanliness-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="cleanliness-star-2" name="rating-cleanliness" value="2">
+                    <label for="cleanliness-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="cleanliness-star-1" name="rating-cleanliness" value="1">
+                    <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
+
+            <label class="review-field">
+                <span class="criterion-title">Комментарий</span>
+                <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+            </label>
+
+            <div class="form-actions">
+                <button type="submit">Отправить отзыв</button>
+            </div>
+        </form>
+        <div class="shop-banner">
+            <a href="https://karatov.ru/sale/" target="_blank" rel="noopener noreferrer" title="Перейти к акциям и специальным предложениям Karatov" class="banner">
                 <img src="../images/saleKaratov.jpg" alt="Акции: скидки и специальные предложения на украшения Karatov" loading="lazy">
             </a>
+        </div>
         </div>
     </div>
 </main>

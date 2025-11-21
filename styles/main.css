@@ -1,11 +1,14 @@
 ﻿main {
     display: flex;
     min-height: 100%;
+    justify-content: center;
 }
 
-section {
+main section {
     flex-grow: 1;
-    margin-right: 15px;
+    max-width: 920px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .description-trk {
@@ -29,8 +32,8 @@ section {
     float: left;
     height: 250px;
     width: 350px;
-    margin: 20px;
-    border-radius: 5%;
+    margin: 20px 15px;
+    border-radius: 12px;
     box-shadow: 0 0 20px rgba(138, 43, 226, 0.3)
 }
 
