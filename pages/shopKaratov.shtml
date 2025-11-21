@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="shop-page-container">
+        <h1>Ювелирный магазин Karatov</h1>
+
+        <article>
+            <div class="shop-image">
+                <img src="../images/logoKaratov.jpg" alt="Логотип Karatov" loading="lazy">
+            </div>
+
+            <div class="shop-info">
+                <h3>О магазине</h3>
+                <p>Karatov — это ювелирный бренд, воплощающий в себе традиции русского ювелирного искусства и современные тенденции. В нашем магазине, расположенном в ТРЦ [Название торгового центра], вы найдете эксклюзивные украшения из золота и серебра с драгоценными камнями, созданные для того, чтобы подчеркнуть вашу индивидуальность и сделать каждый момент незабываемым.</p>
+                <p>Ознакомьтесь с коллекциями на <a href="https://karatov.ru/" target="_blank" rel="noopener noreferrer">официальном сайте Karatov</a></p>
+            </div>
+        </article>
+
+        <article>
+            <table class="product-characteristics-table" aria-labelledby="chars-title">
+                <thead>
+                <tr><th colspan="2" id="chars-title">Ключевые особенности ювелирного магазина Karatov</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Ассортимент</strong></td>
+                    <td>Эксклюзивные кольца (помолвочные, обручальные), серьги, подвески, колье, браслеты из золота и серебра с бриллиантами, сапфирами, изумрудами, рубинами и другими камнями.</td>
+                </tr>
+                <tr>
+                    <td><strong>Качество</strong></td>
+                    <td>Высочайшее качество драгоценных металлов (585, 750 пробы золота, 925 пробы серебра), сертифицированные драгоценные камни, ручная работа мастеров.</td>
+                </tr>
+                <tr>
+                    <td><strong>Дизайн</strong></td>
+                    <td>Изысканный, утонченный, сочетающий классическую элегантность с современными трендами. Авторские коллекции и возможность индивидуального заказа.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ценовой сегмент</strong></td>
+                    <td>Премиум-класс, оправданный высоким качеством материалов, уникальным дизайном и ручной работой.</td>
+                </tr>
+                <tr>
+                    <td><strong>Сервис</strong></td>
+                    <td>Персональные консультации геммологов и ювелиров, помощь в выборе украшений для особых случаев, услуги по чистке и ремонту, изготовление по индивидуальному заказу.</td>
+                </tr>
+                <tr>
+                    <td><strong>Программы лояльности</strong></td>
+                    <td>Эксклюзивные предложения, VIP-обслуживание и накопительные скидки для ценителей бренда.</td>
+                </tr>
+                <tr>
+                    <td><strong>Локация</strong></td>
+                    <td>Удобное расположение в ТРК Атриум, обеспечивающее комфортный выбор.</td>
+                </tr>
+                </tbody>
+            </table>
+        <form class="shop-review-form" action="#" method="post" novalidate>
+            <h2>Оставить отзыв о магазине</h2>
+            <label class="review-field">
+                <span class="criterion-title">Оцените качество работы магазина</span>
+                <div class="rating-area">
+                    <input type="radio" id="store-star-5" name="rating" value="5">
+                    <label for="store-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="store-star-4" name="rating" value="4">
+                    <label for="store-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="store-star-3" name="rating" value="3">
+                    <label for="store-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="store-star-2" name="rating" value="2">
+                    <label for="store-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="store-star-1" name="rating" value="1">
+                    <label for="store-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
+            <label class="review-field">
+                <span class="criterion-title">Оцените качество работы консультанта</span>
+                <div class="rating-area">
+                    <input type="radio" id="consultant-star-5" name="rating" value="5">
+                    <label for="consultant-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="consultant-star-4" name="rating" value="4">
+                    <label for="consultant-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="consultant-star-3" name="rating" value="3">
+                    <label for="consultant-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="consultant-star-2" name="rating" value="2">
+                    <label for="consultant-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="consultant-star-1" name="rating" value="1">
+                    <label for="consultant-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
+
+            <label class="review-field">
+                <span class="criterion-title">Оцените качество работы кассира</span>
+                <div class="rating-area">
+                    <input type="radio" id="cashier-star-5" name="rating" value="5">
+                    <label for="cashier-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="cashier-star-4" name="rating" value="4">
+                    <label for="cashier-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="cashier-star-3" name="rating" value="3">
+                    <label for="cashier-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="cashier-star-2" name="rating" value="2">
+                    <label for="cashier-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="cashier-star-1" name="rating" value="1">
+                    <label for="cashier-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
+
+            <label class="review-field">
+                <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                <div class="rating-area">
+                    <input type="radio" id="cleanliness-star-5" name="rating" value="5">
+                    <label for="cleanliness-star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="cleanliness-star-4" name="rating" value="4">
+                    <label for="cleanliness-star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="cleanliness-star-3" name="rating" value="3">
+                    <label for="cleanliness-star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="cleanliness-star-2" name="rating" value="2">
+                    <label for="cleanliness-star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="cleanliness-star-1" name="rating" value="1">
+                    <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                </div>
+            </label>
+
+            <label class="review-field">
+                <span class="criterion-title">Комментарий</span>
+                <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+            </label>
+
+            <div class="form-actions">
+                <button type="submit">Отправить отзыв</button>
+            </div>
+        </form>
+        </article>
+        <article>
+            <div class="shop-full-description">
+                <h3>Подробная информация о бренде Karatov</h3>
+                <p>Karatov — это воплощение элегантности и мастерства в ювелирном искусстве. Бренд зарекомендовал себя как производитель высококачественных украшений, уделяя особое внимание отбору материалов и безупречности исполнения. Каждое изделие Karatov проходит строгий контроль качества, что гарантирует его долговечность и ценность.</p>
+
+                <p>Коллекции Karatov вдохновлены красотой природы и архитектуры, а также вечными ценностями, такими как любовь и гармония. Мастера бренда сочетают традиционные техники с инновационными подходами, чтобы создавать украшения, которые становятся не просто аксессуарами, а настоящими произведениями искусства, передающимися из поколения в поколение.</p>
+
+                <p>В Karatov вы найдете идеальное украшение для любого важного события: помолвки, свадьбы, юбилея или просто для того, чтобы порадовать себя или близких. Наши эксперты помогут вам сделать правильный выбор, чтобы ваше приобретение приносило радость долгие годы.</p>
+            </div>
+
+            <div class="shop-in-trk">
+                <a href="../images/trkKaratov.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/trkKaratov.jpg" alt="Витрина ювелирного магазина Karatov в ТРК Атриум" loading="lazy">
+                </a>
+                <p><em>ТРК Атриум, 2 этаж</em></p>
+            </div>
+        </article>
+
+        <div class="banner">
+            <a href="https://karatov.ru/sale/" target="_blank" rel="noopener noreferrer" title="Перейти к акциям и специальным предложениям Karatov">
+                <img src="../images/saleKaratov.jpg" alt="Акции: скидки и специальные предложения на украшения Karatov" loading="lazy">
+            </a>
+        </div>
+    </div>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>

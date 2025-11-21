@@ -1,0 +1,15 @@
+﻿footer {
+    background: rgba(138, 43, 226, 0.5);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer-docs a {
+    color: #121111;
+    margin: 0 10px;
+}
+
+.footer-docs a:hover {
+    color: #fff;
+}

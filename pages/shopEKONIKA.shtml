@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТРК Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="shop-page-container">
+        <h2>Магазин обуви и аксессуаров EKONIKA</h2>
+        <article>
+            <div class="shop-image">
+                <img src="../images/logoEkonika.jpg" alt="Магазин EKONIKA">
+            </div>
+            <div class="shop-info">
+                <h3>Описание магазина</h3>
+                <p>EKONIKA — это ведущий российский бренд, специализирующийся на производстве высококачественной обуви, сумок и аксессуаров для женщин. Марка известна своим изысканным дизайном, комфортом и вниманием к деталям.</p>
+                <p>Перейти на <a href="https://ekonika.ru/">официальный сайт магазина</a></p>
+            </div>
+        </article>
+        <article>
+            <table class="product-characteristics-table">
+                <thead>
+                <tr>
+                    <th colspan="2">Основные характеристики магазина EKONIKA</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Ассортимент</strong></td>
+                    <td>Широкий выбор женской обуви (от туфель и ботильонов до кроссовок и сапог), сумок различных фасонов и размеров, а также аксессуаров (ремни, кошельки, платки).</td>
+                </tr>
+                <tr>
+                    <td><strong>Стиль</strong></td>
+                    <td>Элегантный, современный, функциональный. Сочетание классических форм с актуальными модными тенденциями, универсальность для различных стилей.</td>
+                </tr>
+                <tr>
+                    <td><strong>Качество</strong></td>
+                    <td>Использование натуральной кожи высокого качества, замши и других премиальных материалов. Комфортная колодка, внимание к долговечности и фурнитуре.</td>
+                </tr>
+                <tr>
+                    <td><strong>Обновление коллекций</strong></td>
+                    <td>Регулярное обновление коллекций в соответствии с мировыми модными трендами и сезонными запросами.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ценовой сегмент</strong></td>
+                    <td>Средний и средний+, предлагающий доступную роскошь для ценителей качества и стиля.</td>
+                </tr>
+                <tr>
+                    <td><strong>Локация</strong></td>
+                    <td>Удобное расположение в ТРК Атриум, с легким доступом.</td>
+                </tr>
+                </tbody>
+            </table>
+            <form class="shop-review-form" action="#" method="post" novalidate>
+                <h2>Оставить отзыв о магазине</h2>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы магазина</span>
+                    <div class="rating-area">
+                        <input type="radio" id="store-star-5" name="rating" value="5">
+                        <label for="store-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="store-star-4" name="rating" value="4">
+                        <label for="store-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="store-star-3" name="rating" value="3">
+                        <label for="store-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="store-star-2" name="rating" value="2">
+                        <label for="store-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="store-star-1" name="rating" value="1">
+                        <label for="store-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы консультанта</span>
+                    <div class="rating-area">
+                        <input type="radio" id="consultant-star-5" name="rating" value="5">
+                        <label for="consultant-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="consultant-star-4" name="rating" value="4">
+                        <label for="consultant-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="consultant-star-3" name="rating" value="3">
+                        <label for="consultant-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="consultant-star-2" name="rating" value="2">
+                        <label for="consultant-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="consultant-star-1" name="rating" value="1">
+                        <label for="consultant-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы кассира</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cashier-star-5" name="rating" value="5">
+                        <label for="cashier-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cashier-star-4" name="rating" value="4">
+                        <label for="cashier-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cashier-star-3" name="rating" value="3">
+                        <label for="cashier-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cashier-star-2" name="rating" value="2">
+                        <label for="cashier-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cashier-star-1" name="rating" value="1">
+                        <label for="cashier-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cleanliness-star-5" name="rating" value="5">
+                        <label for="cleanliness-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cleanliness-star-4" name="rating" value="4">
+                        <label for="cleanliness-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cleanliness-star-3" name="rating" value="3">
+                        <label for="cleanliness-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cleanliness-star-2" name="rating" value="2">
+                        <label for="cleanliness-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cleanliness-star-1" name="rating" value="1">
+                        <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Комментарий</span>
+                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit">Отправить отзыв</button>
+                </div>
+            </form>
+        </article>
+        <article>
+            <div class="shop-full-description">
+                <h3>Подробная информация о EKONIKA</h3>
+                <p>EKONIKA — это синоним стиля, комфорта и высокого качества в мире женской обуви и аксессуаров. Каждый сезон бренд представляет коллекции, которые не только следуют последним модным тенденциям, но и становятся незаменимой частью гардероба современной женщины. В магазине EKONIKA в ТРК Атриум вы найдете идеальную пару обуви и сумку, которые подчеркнут ваш индивидуальный стиль и обеспечат комфорт на весь день.</p>
+                <p>Особое внимание EKONIKA уделяет созданию максимально удобной колодки и использованию натуральных материалов, что гарантирует долговечность и приятные ощущения при носке. Ассортимент включает как базовые модели для повседневной жизни, так и изысканные варианты для особых случаев, дополненные стильными аксессуарами, позволяющими завершить любой образ.</p>
+            </div>
+            <div class="shop-in-trk">
+                <a href="../images/ekonika_atrium.jpg" target="_blank"><img src="../images/ekonika_atrium.jpg" alt="Витрина магазина EKONIKA в ТРК Атриум"></a>
+                <p><em>ТРК Атриум, 1 этаж</em></p>
+            </div>
+        </article>
+        <div class="shop-banner">
+        <a href="https://ekonika.ru/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу акции" class="banner">
+            <img src="../images/saleEkonika.jpg" alt="Новая коллекция обуви и сумок EKONIKA" loading="lazy">
+        </a>
+    </div>
+    </div>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>

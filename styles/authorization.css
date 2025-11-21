@@ -1,0 +1,71 @@
+﻿main {
+    display: flex;
+    min-height: 100%;
+}
+
+.authorization-form {
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+    max-width: 500px;
+    box-sizing: border-box;
+    color: #222;
+    height: max-content;
+}
+
+.authorization-form h2 {
+    margin: 0 0 12px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.authorization-form input[type="text"],
+.authorization-form input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 3px;
+    border: 1px solid darkorchid;
+    border-radius: 5px;
+    color: darkslategrey;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.authorization-form input:focus {
+    border-color: darkorchid;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+}
+
+.authorization-form .checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+    accent-color: #32bacc;
+    font-size: 0.9rem;
+}
+
+.authorization-form .btn-send {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: rgba(138, 43, 226, 0.5);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    box-sizing: border-box;
+}
+
+.authorization-form .btn-send:hover {
+    background-color: rgba(8, 90, 172, 0.5);
+    box-shadow: 0 0 15px rgba(40, 173, 204, 0.5);
+}

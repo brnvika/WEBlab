@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТРК Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/catalog.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="catalog">
+    <h2>КАТАЛОГ</h2>
+        <div class="search-form">
+            <div class="search-form__input-group">
+                <input id="searchInput" type="text" class="search-form__input" placeholder="Найти магазин">
+                <button id="searchButton" class="search-form__button">
+                    <img src="../images/icons8-поиск-40.png" alt="Поиск">
+                </button>
+            </div>
+            <select id="selectCategory" class="search-form__select">
+                <option value="all">Все магазины</option>
+                <option value="clothes">Одежда</option>
+                <option value="shoes">Обувь</option>
+                <option value="jewelry">Ювелирные изделия</option>
+            </select>
+            <div class="search-form__sort">
+                <select>
+                    <option value="popularity">По популярности</option>
+                    <option value="alphabet">По алфавиту</option>
+                </select>
+            </div>
+        </div>
+    <section>
+    <div class="store-card-container" data-category="clothes">
+        <div class="store-card">
+            <a href="../pages/shop12Storeez.shtml"><img src="/images/12storeez.jpg" alt="Модели в одежде 12STOREEZ" class="store-card__background-img"></a>
+
+            <div class="store-card__logo">
+                <p>12 STOREEZ</p>
+            </div>
+
+            <div class="store-card__bottom-bar">
+                <div class="store-card__text-content">
+                    <h3 class="store-card__name">12STOREEZ</h3>
+                    <p class="store-card__category">Женская одежда</p>
+                </div>
+                <a href="#" class="store-card__map-button">
+                    НА КАРТЕ
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="store-card-container" data-category="clothes">
+        <div class="store-card">
+            <a href="../pages/shopLIME.shtml"><img src="/images/lime.jpg" alt="Модели в одежде lime" class="store-card__background-img"></a>
+
+            <div class="store-card__logo">
+                <p>LIME</p>
+            </div>
+
+            <div class="store-card__bottom-bar">
+                <div class="store-card__text-content">
+                    <h3 class="store-card__name">LIME</h3>
+                    <p class="store-card__category">Женская, мужская, детская одежда</p>
+                </div>
+                <a href="#" class="store-card__map-button">
+                    НА КАРТЕ
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="store-card-container" data-category="clothes">
+        <div class="store-card">
+            <a href="../pages/shopLoveRepublic.shtml"><img src="/images/loveRepublic.jpg" alt="Модели в одежде Love Republic" class="store-card__background-img"></a>
+
+            <div class="store-card__logo">
+                <p>LoveRepublic</p>
+            </div>
+
+            <div class="store-card__bottom-bar">
+                <div class="store-card__text-content">
+                    <h3 class="store-card__name">Love Republic</h3>
+                    <p class="store-card__category">Женская одежда</p>
+                </div>
+                <a href="#" class="store-card__map-button">
+                    НА КАРТЕ
+                </a>
+            </div>
+        </div>
+    </div>
+        
+        <div class="store-card-container" data-category="shoes">
+            <div class="store-card">
+                <a href="../pages/shopEKONIKA.shtml"><img src="/images/ekonika.jpg" alt="Модели в одежде ekonika" class="store-card__background-img"></a>
+
+                <div class="store-card__logo">
+                    <p>EKONIKA</p>
+                </div>
+
+                <div class="store-card__bottom-bar">
+                    <div class="store-card__text-content">
+                        <h3 class="store-card__name">EKONIKA</h3>
+                        <p class="store-card__category">Обувь</p>
+                    </div>
+                    <a href="#" class="store-card__map-button">
+                        НА КАРТЕ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="store-card-container" data-category="shoes">
+            <div class="store-card">
+                <a href="../pages/shopBaldinini.shtml"><img src="/images/baldinini.jpg" alt="Обувь baldinini" class="store-card__background-img"></a>
+
+                <div class="store-card__logo">
+                    <p>BALDININI</p>
+                </div>
+
+                <div class="store-card__bottom-bar">
+                    <div class="store-card__text-content">
+                        <h3 class="store-card__name">BALDININI</h3>
+                        <p class="store-card__category">Обувь</p>
+                    </div>
+                    <a href="#" class="store-card__map-button">
+                        НА КАРТЕ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="store-card-container" data-category="shoes">
+            <div class="store-card">
+                <a href="../pages/shopEcco.shtml"><img src="/images/ecco.jpg" alt="Обувь Ecco" class="store-card__background-img"></a>
+                <div class="store-card__logo">
+                    <p>ECCO</p>
+                </div>
+
+                <div class="store-card__bottom-bar">
+                    <div class="store-card__text-content">
+                        <h3 class="store-card__name">ECCO</h3>
+                        <p class="store-card__category">Обувь</p>
+                    </div>
+                    <a href="#" class="store-card__map-button">
+                        НА КАРТЕ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="store-card-container" data-category="jewelry">
+            <div class="store-card">
+                <a href="../pages/shopSokolov.shtml"><img src="/images/sokolov.jpg" alt="sokolov" class="store-card__background-img"></a>
+                <div class="store-card__logo">
+                    <p>SOKOLOV</p>
+                </div>
+
+                <div class="store-card__bottom-bar">
+                    <div class="store-card__text-content">
+                        <h3 class="store-card__name">SOKOLOV</h3>
+                        <p class="store-card__category">Ювелирные изделия</p>
+                    </div>
+                    <a href="#" class="store-card__map-button">
+                        НА КАРТЕ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="store-card-container" data-category="jewelry">
+            <div class="store-card">
+                <a href="../pages/shopSunlight.shtml"><img src="/images/sunlight.jpg" alt="Sunlight" class="store-card__background-img"></a>
+                <div class="store-card__logo">
+                    <p>SUNLIGHT</p>
+                </div>
+
+                <div class="store-card__bottom-bar">
+                    <div class="store-card__text-content">
+                        <h3 class="store-card__name">SUNLIGHT</h3>
+                        <p class="store-card__category">Ювелирные изделия</p>
+                    </div>
+                    <a href="#" class="store-card__map-button">
+                        НА КАРТЕ
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-card-container" data-category="jewelry">
+            <div class="store-card">
+                <a href="../pages/shopKaratov.shtml"><img src="/images/karatov.jpg" alt="Karatov" class="store-card__background-img"></a>
+                <div class="store-card__logo">
+                    <p>KARATOV</p>
+                </div>
+
+                <div class="store-card__bottom-bar">
+                    <div class="store-card__text-content">
+                        <h3 class="store-card__name">KARATOV</h3>
+                        <p class="store-card__category">Ювелирные изделия</p>
+                    </div>
+                    <a href="#" class="store-card__map-button">
+                        НА КАРТЕ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</main>
+<!--#include virtual="../base/footer.html" -->
+<script src="../scripts/filter_catalog.js"></script>
+</body>
+</html>

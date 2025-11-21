@@ -1,0 +1,59 @@
+﻿main {
+    display: flex;
+    min-height: 100%;
+}
+
+section {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.description-trk {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-description {
+    padding-right: 20px;
+    padding-left: 20px;
+    align-self: center;
+}
+
+.description-trk p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+.description-trk img {
+    float: left;
+    height: 250px;
+    width: 350px;
+    margin: 20px;
+    border-radius: 5%;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3)
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    border: 5px solid whitesmoke;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+}
+
+th, td {
+    border: 5px solid whitesmoke;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+    padding: 15px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.common-row-cell {
+    width: 50%;
+}
+
+.list1 {
+    list-style-type: circle;
+}
+

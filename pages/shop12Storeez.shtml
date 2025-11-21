@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТРК Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="shop-page-container">
+        <h2>Магазин одежды 12 STOREEZ</h2>
+        <article>
+            <div class="shop-image">
+                <img src="../images/logo12Storeez.jpg" alt="Магазин 12 STOREEZ">
+            </div>
+            <div class="shop-info">
+                <h3>Описание магазина</h3>
+                <p>12 STOREEZ — российский бренд, предлагающий стильную одежду и аксессуары для мужчин и женщин, вдохновленные современными трендами и минималистичным дизайном.</p>
+                <p>Перейти на <a href="https://12storeez.com/">официальный сайт магазина</a></p>
+            </div>
+        </article>
+        <article>
+            <table class="product-characteristics-table">
+                <thead>
+                <tr>
+                    <th colspan="2">Основные характеристики магазина 12 STOREEZ</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Ассортимент</strong></td>
+                    <td>Основная специализация — мужская и женская одежда, включая платья, брюки, джинсы, верхнюю одежду, трикотаж. Также представлены обувь и аксессуары.</td>
+                </tr>
+                <tr>
+                    <td><strong>Стиль</strong></td>
+                    <td>Современный минимализм, casual chic, с акцентом на качество, лаконичные силуэты и нейтральную палитру. Идеально для создания базового гардероба.</td>
+                </tr>
+                <tr>
+                    <td><strong>Качество</strong></td>
+                    <td>Высокое качество материалов (натуральные ткани: хлопок, шерсть, лен) и пошива, внимание к деталям. Ориентация на долговечность изделий.</td>
+                </tr>
+                <tr>
+                    <td><strong>Обновление коллекций</strong></td>
+                    <td>Регулярные поступления новых моделей, соответствующие последним тенденциям моды, с фокусом на сезонные коллекции.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ценовой сегмент</strong></td>
+                    <td>Средний+, ориентирован на покупателей, ценящих качество, стиль и комфорт.</td>
+                </tr>
+                <tr>
+                    <td><strong>Локация</strong></td>
+                    <td>Удобное расположение в ТРК Атриум, с легким доступом.</td>
+                </tr>
+                </tbody>
+            </table>
+            <form class="shop-review-form" action="#" method="post" novalidate>
+                <h2>Оставить отзыв о магазине</h2>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы магазина</span>
+                    <div class="rating-area">
+                        <input type="radio" id="store-star-5" name="rating" value="5">
+                        <label for="store-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="store-star-4" name="rating" value="4">
+                        <label for="store-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="store-star-3" name="rating" value="3">
+                        <label for="store-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="store-star-2" name="rating" value="2">
+                        <label for="store-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="store-star-1" name="rating" value="1">
+                        <label for="store-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы консультанта</span>
+                    <div class="rating-area">
+                        <input type="radio" id="consultant-star-5" name="rating" value="5">
+                        <label for="consultant-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="consultant-star-4" name="rating" value="4">
+                        <label for="consultant-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="consultant-star-3" name="rating" value="3">
+                        <label for="consultant-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="consultant-star-2" name="rating" value="2">
+                        <label for="consultant-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="consultant-star-1" name="rating" value="1">
+                        <label for="consultant-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы кассира</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cashier-star-5" name="rating" value="5">
+                        <label for="cashier-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cashier-star-4" name="rating" value="4">
+                        <label for="cashier-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cashier-star-3" name="rating" value="3">
+                        <label for="cashier-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cashier-star-2" name="rating" value="2">
+                        <label for="cashier-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cashier-star-1" name="rating" value="1">
+                        <label for="cashier-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cleanliness-star-5" name="rating" value="5">
+                        <label for="cleanliness-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cleanliness-star-4" name="rating" value="4">
+                        <label for="cleanliness-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cleanliness-star-3" name="rating" value="3">
+                        <label for="cleanliness-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cleanliness-star-2" name="rating" value="2">
+                        <label for="cleanliness-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cleanliness-star-1" name="rating" value="1">
+                        <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Комментарий</span>
+                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit">Отправить отзыв</button>
+                </div>
+            </form>
+        </article>
+        <article>
+            <div class="shop-full-description">
+                <h3>Подробная информация о 12 STOREEZ</h3>
+                <p>12 STOREEZ — это бренд, который завоевал популярность благодаря своей приверженности к минимализму, качеству и актуальным трендам. Он предлагает одежду, которая легко вписывается в повседневный гардероб, сочетая в себе элегантность и комфорт. Магазин в ТРК Атриум — это место, где можно найти идеальные базовые вещи и создать множество стильных образов.</p>
+                <p>Особое внимание бренд уделяет выбору тканей и фурнитуры, гарантируя долговечность и приятные тактильные ощущения. Коллекции 12 STOREEZ всегда отражают последние модные веяния, но при этом сохраняют свою вневременную привлекательность, позволяя покупателям создавать актуальные и гармоничные образы.</p>
+            </div>
+            <div class="shop-in-trk">
+                <a href="../images/12Storeez_atrium.jpg" target="_blank"><img src="../images/12Storeez_atrium.jpg" alt="Витрина магазина 12 STOREEZ в ТРК Атриум"></a>
+                <p><em>ТРК Атриум, 1 этаж</em></p>
+            </div>
+        </article>
+        <div class="shop-banner">
+        <a href="https://12storeez.com/" target="_blank" rel="noopener noreferrer" title="Посмотреть новую коллекцию" class="banner">
+            <img src="../images/new12.jpg" alt="Новая коллекция 12 STOREEZ" loading="lazy">
+        </a>
+        </div>
+    </div>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>

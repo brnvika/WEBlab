@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/authorization.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <form id="authorization-form" class="authorization-form" action="/login" method="post" novalidate>
+      <h2>Вход в личный кабинет</h2>
+
+      <label for="contact">Email или номер телефона</label>
+      <input id="contact" name="contact" type="text"
+             inputmode="tel"
+             placeholder="+7 (999) 999-99-99 или example@mail.ru"
+             pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)|(^\+?\d[\d\s\-\(\)]{6,}$)"
+             title="Email или номер телефона" required/>
+
+      <label for="password">Пароль</label>
+      <input id="password" name="password" type="password" required autocomplete="password" />
+
+      <button type="submit" class="btn-send" id="submit-btn">Войти</button>
+    </form>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>

@@ -1,0 +1,215 @@
+﻿.shop-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shop-image img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+    border-radius: 10%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    border: 5px solid whitesmoke;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 30px;
+}
+
+th, td {
+    border: 5px solid whitesmoke;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+    padding: 15px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.shop-in-trk img {
+    width: 360px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+    border-radius: 10%;
+}
+
+.shop-in-trk {
+    margin-left: 50px;
+}
+
+.shop-full-description {
+    width: 50%;
+}
+
+.shop-page-container h2, h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.shop-info {
+    width: 80%;
+}
+
+.banner img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 5%;
+    animation: shadow 1s infinite;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.3); 
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(138, 43, 226,  0.3);
+    }
+}
+
+.shop-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.rating-area {
+  display: inline-flex;
+  flex-direction: row-reverse; 
+  justify-content: center; 
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.rating-area input[type="radio"] {
+  overflow: hidden;
+}
+
+.rating-area label {
+  cursor: pointer;
+  color: #cfcfcf;
+  user-select: none;
+  line-height: 1;
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.rating-area label::before {
+  content: '★';
+  display: inline-block;
+  font-size: 35px;
+  transition: color 0.15s ease, transform 0.08s ease;
+  line-height: 1;
+}
+    
+.rating-area :is(label:hover, input[type="radio"]:checked + label),
+.rating-area :is(label:hover, input[type="radio"]:checked + label) ~ label {
+  color: #f5b301;
+  transform: scale(1.06);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+.rating-area label:active {
+  transform: translateY(1px);
+}
+
+.shop-review-form {
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.shop-review-form h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+}
+
+.review-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.review-field .criterion-title {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.rating-area {
+    display: flex;
+    gap: 5px;
+}
+
+.rating-area input[type="radio"] {
+    display: none;
+}
+
+.rating-area label {
+    width: 20px;
+    height: 28px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px;
+    padding: 10px;
+    border: 1px solid darkorchid;
+    border-radius: 5px;
+    color: dimgrey;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.form-actions {
+    text-align: right;
+}
+
+.form-actions button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgba(138, 43, 226, 0.5);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.form-actions button:hover {
+    background-color: rgba(138, 43, 226, 0.3);
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+}

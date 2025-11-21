@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТРК Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="shop-page-container">
+        <h2>Магазин одежды LIME</h2>
+        <article>
+        <div class="shop-image">
+            <img src="../images/logoLime.jpg" alt="Магазин LIME">
+        </div>
+        <div class="shop-info">
+        <h3>Описание магазина</h3>
+            <p>LIME (ООО «Стиль трейд») — российский <i>дизайнерский</i> бренд по производству одежды, аксессуаров и обуви.</p>
+        <p>Перейти на <a href="https://limestore.com/">официальный сайт магазина</a></p>
+        </div>
+        </article>
+        <article>
+        <table class="product-characteristics-table">
+            <thead>
+            <tr>
+                <th colspan="2">Основные характеристики магазина LIME</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong>Ассортимент</strong></td>
+                <td>Помимо основной женской линии, LIME выпускает коллекции для мужчин (MAN) и детей (KIDS), а также обувь, аксессуары и нижнее бельё.</td>
+            </tr>
+            <tr>
+                <td><strong>Стиль</strong></td>
+                <td>Современный, городской, сочетающий элегантность, casual и последние модные тенденции.</td>
+            </tr>
+            <tr>
+                <td><strong>Качество</strong></td>
+                <td>Применение натуральных и смесовых тканей высокого качества (хлопок, лён, вискоза, шерсть) с акцентом на комфорт и долговечность.</td>
+            </tr>
+            <tr>
+                <td><strong>Обновление коллекций</strong></td>
+                <td>Еженедельные или ежемесячные обновления, соответствующие сезонным и мировым трендам.</td>
+            </tr>
+            <tr>
+                <td><strong>Ценовой сегмент</strong></td>
+                <td>Средний, ориентированный на широкую аудиторию.</td>
+            </tr>
+            <tr>
+                <td><strong>Локация</strong></td>
+                <td>Удобное расположение в ТРК Атриум, с легким доступом.</td>
+            </tr>
+            </tbody>
+        </table>
+            <form class="shop-review-form" action="#" method="post" novalidate>
+                <h2>Оставить отзыв о магазине</h2>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы магазина</span>
+                    <div class="rating-area">
+                        <input type="radio" id="store-star-5" name="rating" value="5">
+                        <label for="store-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="store-star-4" name="rating" value="4">
+                        <label for="store-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="store-star-3" name="rating" value="3">
+                        <label for="store-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="store-star-2" name="rating" value="2">
+                        <label for="store-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="store-star-1" name="rating" value="1">
+                        <label for="store-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы консультанта</span>
+                    <div class="rating-area">
+                        <input type="radio" id="consultant-star-5" name="rating" value="5">
+                        <label for="consultant-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="consultant-star-4" name="rating" value="4">
+                        <label for="consultant-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="consultant-star-3" name="rating" value="3">
+                        <label for="consultant-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="consultant-star-2" name="rating" value="2">
+                        <label for="consultant-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="consultant-star-1" name="rating" value="1">
+                        <label for="consultant-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы кассира</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cashier-star-5" name="rating" value="5">
+                        <label for="cashier-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cashier-star-4" name="rating" value="4">
+                        <label for="cashier-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cashier-star-3" name="rating" value="3">
+                        <label for="cashier-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cashier-star-2" name="rating" value="2">
+                        <label for="cashier-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cashier-star-1" name="rating" value="1">
+                        <label for="cashier-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cleanliness-star-5" name="rating" value="5">
+                        <label for="cleanliness-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cleanliness-star-4" name="rating" value="4">
+                        <label for="cleanliness-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cleanliness-star-3" name="rating" value="3">
+                        <label for="cleanliness-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cleanliness-star-2" name="rating" value="2">
+                        <label for="cleanliness-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cleanliness-star-1" name="rating" value="1">
+                        <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Комментарий</span>
+                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit">Отправить отзыв</button>
+                </div>
+            </form>
+        </article>
+        <article>
+        <div class="shop-full-description">
+            <h3>Подробная информация о LIME</h3>
+            <p>Бренд LIME успешно зарекомендовал себя на российском рынке, предлагая концепцию "быстрой моды" с акцентом на качество и актуальность. Каждый магазин LIME — это не просто торговая точка, а продуманное пространство, где шопинг превращается в удовольствие. Интерьеры выполнены в современном минималистичном стиле, обеспечивая комфортную навигацию и приятную атмосферу для выбора нарядов.</p>
+            <p>LIME внимательно следит за мировыми подиумами и оперативно внедряет ключевые тренды в свои коллекции, сохраняя при этом узнаваемый стиль. Это позволяет покупательницам всегда оставаться на пике моды, не переплачивая. От повседневных образов до вечерних нарядов – в LIME можно найти решение для любого случая, дополненное стильными аксессуарами и обувью.</p>
+        </div>
+        <div class="shop-in-trk">
+            <a href="../images/lime_atrium.jpg" target="_blank"><img src="../images/lime_atrium.jpg"></a>
+            <p><em>ТРК Атриум, 2 этаж</em></p>
+        </div>
+        </article>
+        <div class="shop-banner">
+        <a href="https://limestore.com/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу акции" class="banner">
+        <img src="../images/saleLime.jpg" alt="Сезонная распродажа в LIME — скидки до 50%" loading="lazy">
+        </a>
+        </div>
+    </div>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>

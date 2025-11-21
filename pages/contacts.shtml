@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТРК Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/contacts.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <section>
+        <div class="contact">
+            <div class="contact-info">
+                <h2>Контактная информация</h2>
+                <p>Если у Вас есть вопросы, предложения или отзывы о ТРК Атриум, Вы можете легко связаться с нашей администрацией, отправив электронное письмо по адресу <strong>info@engeocom.com</strong> или воспользуйтесь формой обратной связи.</p>
+                <h2>Как добраться до ТРК Атриум</h2>
+                <p>ТРК Атриум расположен в самом центре столицы, по адресу <strong>ул. Земляной Вал, дом 33</strong>, в непосредственной близости от Садового кольца и Курского вокзала.</p>
+                <p>Добраться до ТРК Атриум можно с помощью метро (станции Курская или Чкаловская), МЦД (диаметры: D2, D4) или на личном автомобиле.</p>
+                <p><strong>График работы:</strong> ежедневно с 10:00 до 23:00</p>
+                <p><strong>Контакты:</strong> +7(495) 970-15-55</p>
+            </div>
+    <div class="message-form">
+    <form action="#" method="post"> 
+        <div class="input-form">
+            <label for="name" class="form-label">Как вас зовут?</label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="Введите ваше имя">
+        </div>
+
+        <div class="input-form">
+            <label for="email" class="form-label">Эл. почта</label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="Введите email">
+        </div>
+
+        <div class="input-form">
+            <label for="message" class="form-label">Какой у вас вопрос:</label>
+            <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="Опишите ваш вопрос..."></textarea>
+        </div>
+    <div class="agreement-form">
+        <input type="checkbox" id="agreement" name="agreement" class="form-checkbox" required>
+        <label for="agreement" class="form-label form-label--checkbox">
+            Отправляя данную форму, вы соглашаетесь с <a href="/documents/politika-konfidencialnosti.pdf" target="_blank">политикой конфиденциальности</a>.
+        </label>
+        <button type="submit" class="form-button">Отправить</button>
+    </div>
+    </form>
+    </div>
+        </div>
+        <section class="address-form">
+            <div style="position:relative;overflow:hidden;box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);">
+                <a href="https://yandex.ru/maps/org/atrium/1010479265/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Атриум</a>
+                <a href="https://yandex.ru/maps/213/moscow/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в Москве</a>
+                <a href="https://yandex.ru/maps/213/moscow/category/entertainment_center/184106372/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Развлекательный центр в Москве</a>
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=37.659049%2C55.757113&mode=search&oid=1010479265&ol=biz&z=13.76" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+        </section>
+    </section>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>

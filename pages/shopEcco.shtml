@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="shop-page-container">
+        <h1>Магазин обуви и аксессуаров ECCO</h1>
+        <article>
+            <div class="shop-image">
+                <img src="../images/logoEcco.png" alt="Логотип магазина ECCO">
+            </div>
+            <div class="shop-info">
+                <h3>О магазине</h3>
+                <p>Добро пожаловать в мир ECCO – бренда, который уже много десятилетий является синонимом бескомпромиссного комфорта, инновационного дизайна и высочайшего качества. В нашем магазине, расположенном в ТРЦ [Название торгового центра], мы с гордостью представляем вам полную коллекцию обуви и аксессуаров, созданных для тех, кто ценит свободу движения и безупречный стиль.</p>
+                <p>Перейти на <a href="https://ru.ecco.com/" target="_blank" rel="noopener noreferrer">официальный сайт магазина ECCO</a></p>
+            </div>
+        </article>
+
+        <article>
+            <table class="product-characteristics-table">
+                <thead>
+                <tr>
+                    <th colspan="2">Ключевые особенности магазина ECCO</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Философия</strong></td>
+                    <td>Бескомпромиссный комфорт, инновационный дизайн и высочайшее качество, созданные для естественных анатомических форм стопы.</td>
+                </tr>
+                <tr>
+                    <td><strong>Технологии</strong></td>
+                    <td>Пионер в использовании технологии литья подошвы под давлением (DIP) для гибкости, легкости и долговечности без клея и швов.</td>
+                </tr>
+                <tr>
+                    <td><strong>Материалы</strong></td>
+                    <td>Использование натуральной кожи высокого качества с собственных кожевенных заводов ECCO, обеспечивающее мягкость, прочность и воздухопроницаемость.</td>
+                </tr>
+                <tr>
+                    <td><strong>Дизайн</strong></td>
+                    <td>Скандинавский минимализм, чистые линии и функциональность, сочетающие элегантность и практичность.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ассортимент</strong></td>
+                    <td>Широкий выбор обуви и аксессуаров для мужчин, женщин и детей: классика, повседневная, спортивная обувь и модные новинки.</td>
+                </tr>
+                <tr>
+                    <td><strong>Обслуживание</strong></td>
+                    <td>Квалифицированные консультанты, помогающие подобрать идеальную пару ECCO под индивидуальные особенности и стиль жизни.</td>
+                </tr>
+                <tr>
+                    <td><strong>Локация</strong></td>
+                    <td>Удобное расположение в ТРК Атриум</td>
+                </tr>
+                </tbody>
+            </table>
+            <form class="shop-review-form" action="#" method="post" novalidate>
+                <h2>Оставить отзыв о магазине</h2>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы магазина</span>
+                    <div class="rating-area">
+                        <input type="radio" id="store-star-5" name="rating" value="5">
+                        <label for="store-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="store-star-4" name="rating" value="4">
+                        <label for="store-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="store-star-3" name="rating" value="3">
+                        <label for="store-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="store-star-2" name="rating" value="2">
+                        <label for="store-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="store-star-1" name="rating" value="1">
+                        <label for="store-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы консультанта</span>
+                    <div class="rating-area">
+                        <input type="radio" id="consultant-star-5" name="rating" value="5">
+                        <label for="consultant-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="consultant-star-4" name="rating" value="4">
+                        <label for="consultant-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="consultant-star-3" name="rating" value="3">
+                        <label for="consultant-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="consultant-star-2" name="rating" value="2">
+                        <label for="consultant-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="consultant-star-1" name="rating" value="1">
+                        <label for="consultant-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы кассира</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cashier-star-5" name="rating" value="5">
+                        <label for="cashier-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cashier-star-4" name="rating" value="4">
+                        <label for="cashier-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cashier-star-3" name="rating" value="3">
+                        <label for="cashier-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cashier-star-2" name="rating" value="2">
+                        <label for="cashier-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cashier-star-1" name="rating" value="1">
+                        <label for="cashier-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cleanliness-star-5" name="rating" value="5">
+                        <label for="cleanliness-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cleanliness-star-4" name="rating" value="4">
+                        <label for="cleanliness-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cleanliness-star-3" name="rating" value="3">
+                        <label for="cleanliness-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cleanliness-star-2" name="rating" value="2">
+                        <label for="cleanliness-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cleanliness-star-1" name="rating" value="1">
+                        <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Комментарий</span>
+                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit">Отправить отзыв</button>
+                </div>
+            </form>
+        </article>
+
+        <article>
+            <div class="shop-full-description">
+                <h3>Подробная информация о бренде ECCO</h3>
+                <p>ECCO – датская обувная компания, основанная в 1963 году Карлом Тусби. С самого начала целью было создание обуви, которая идеально подходит для ног, а не наоборот. Сегодня ECCO является одним из немногих брендов в мире, который полностью контролирует весь процесс производства – от создания кожи на собственных кожевенных заводах до разработки дизайна и изготовления готовой обуви.</p>
+                <p>Это позволяет ECCO гарантировать высочайшее качество каждого элемента и внедрять уникальные технологии, такие как FLUIDFORM™ Direct Comfort Technology (DIP), обеспечивающую анатомически точное сцепление подошвы с верхом обуви без использования клея или швов. Результат – обувь, которая отличается невероятной легкостью, гибкостью и долговечностью.</p>
+                <p>ECCO предлагает коллекции для различных потребностей – от изящных туфель для деловых встреч до прочных ботинок для активного отдыха, а также
+                    стильные сумки и аксессуары, которые дополнят любой образ.</p>
+            </div>
+            <div class="shop-in-trk">
+                <a href="../images/trkEcco.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/trkEcco.jpg" alt="Витрина магазина ECCO в ТРК Атриум">
+                </a>
+                <p><em>ТРК Атриум, 2 этаж</em></p>
+            </div>
+        </article>
+
+        <div class="shop-banner">
+            <a href="https://ru.ecco.com/sale/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу акций и скидок ECCO" class="banner">
+                <img src="../images/ecco_banner.jpg" alt="Акция: скидки на обувь ECCO!" loading="lazy">
+            </a>
+        </div>
+    </div>
+</main>
+</body>
+<!--#include virtual="../base/footer.html" -->
+</html>

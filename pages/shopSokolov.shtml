@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="shop-page-container">
+        <h1>Ювелирный магазин SOKOLOV</h1>
+
+        <article>
+            <div class="shop-image">
+                <img src="../images/logoSokolov.jpg" alt="Логотип ювелирного магазина SOKOLOV">
+            </div>
+            <div class="shop-info">
+                <h3>О магазине</h3>
+                <p>Добро пожаловать в мир SOKOLOV – одного из крупнейших ювелирных брендов России, который известен своим безупречным качеством, современным дизайном и широким ассортиментом украшений. В нашем магазине вы найдете идеальное украшение для любого случая: от повседневных аксессуаров до изысканных изделий для особых моментов.</p>
+                <p>Перейти на <a href="https://sokolov.ru/" target="_blank" rel="noopener noreferrer">официальный сайт SOKOLOV</a></p>
+            </div>
+        </article>
+
+        <article>
+            <table class="product-characteristics-table">
+                <thead>
+                <tr>
+                    <th colspan="2">Ключевые особенности ювелирного магазина SOKOLOV</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Ассортимент</strong></td>
+                    <td>Обширный выбор ювелирных изделий из золота и серебра: кольца, серьги, подвески, браслеты, колье, броши, часы. Вставки из драгоценных, полудрагоценных камней и фианитов.</td>
+                </tr>
+                <tr>
+                    <td><strong>Качество</strong></td>
+                    <td>Строгий контроль качества на всех этапах производства, соответствие государственным стандартам, использование высокопробных металлов.</td>
+                </tr>
+                <tr>
+                    <td><strong>Дизайн</strong></td>
+                    <td>Разнообразие стилей: от классики и минимализма до ультрамодных трендов и эксклюзивных коллекций. Регулярное обновление модельного ряда.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ценовой сегмент</strong></td>
+                    <td>Широкий диапазон цен, от доступных изделий до украшений премиум-класса, что позволяет каждому найти что-то для себя.</td>
+                </tr>
+                <tr>
+                    <td><strong>Сервис</strong></td>
+                    <td>Профессиональные консультанты, индивидуальный подход к каждому клиенту, помощь в выборе украшения и подарка.</td>
+                </tr>
+                <tr>
+                    <td><strong>Программы лояльности</strong></td>
+                    <td>Возможность участия в бонусных программах и специальных акциях для постоянных покупателей.</td>
+                </tr>
+                <tr>
+                    <td><strong>Локация</strong></td>
+                    <td>Удобное расположение в ТРК Атриум</td>
+                </tr>
+                </tbody>
+            </table>
+            <form class="shop-review-form" action="#" method="post" novalidate>
+                <h2>Оставить отзыв о магазине</h2>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы магазина</span>
+                    <div class="rating-area">
+                        <input type="radio" id="store-star-5" name="rating" value="5">
+                        <label for="store-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="store-star-4" name="rating" value="4">
+                        <label for="store-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="store-star-3" name="rating" value="3">
+                        <label for="store-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="store-star-2" name="rating" value="2">
+                        <label for="store-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="store-star-1" name="rating" value="1">
+                        <label for="store-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы консультанта</span>
+                    <div class="rating-area">
+                        <input type="radio" id="consultant-star-5" name="rating" value="5">
+                        <label for="consultant-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="consultant-star-4" name="rating" value="4">
+                        <label for="consultant-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="consultant-star-3" name="rating" value="3">
+                        <label for="consultant-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="consultant-star-2" name="rating" value="2">
+                        <label for="consultant-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="consultant-star-1" name="rating" value="1">
+                        <label for="consultant-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы кассира</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cashier-star-5" name="rating" value="5">
+                        <label for="cashier-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cashier-star-4" name="rating" value="4">
+                        <label for="cashier-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cashier-star-3" name="rating" value="3">
+                        <label for="cashier-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cashier-star-2" name="rating" value="2">
+                        <label for="cashier-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cashier-star-1" name="rating" value="1">
+                        <label for="cashier-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cleanliness-star-5" name="rating" value="5">
+                        <label for="cleanliness-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cleanliness-star-4" name="rating" value="4">
+                        <label for="cleanliness-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cleanliness-star-3" name="rating" value="3">
+                        <label for="cleanliness-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cleanliness-star-2" name="rating" value="2">
+                        <label for="cleanliness-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cleanliness-star-1" name="rating" value="1">
+                        <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Комментарий</span>
+                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit">Отправить отзыв</button>
+                </div>
+            </form>
+        </article>
+
+        <article>
+            <div class="shop-full-description">
+                <h3>Подробная информация о бренде SOKOLOV</h3>
+                <p>SOKOLOV – это крупнейший российский ювелирный бренд, который начал свою историю в 1993 году в Костроме. За более чем четверть века SOKOLOV превратился из небольшой семейной мастерской в международную компанию, продукция которой представлена в тысячах магазинов по всему миру. Ежегодно бренд выпускает миллионы ювелирных изделий, отличающихся уникальным дизайном и высоким качеством.</p>
+                <p>Производство SOKOLOV – одно из крупнейших в Европе, оснащенное самым современным оборудованием. Компания уделяет огромное внимание инновациям и контролю качества на каждом этапе – от разработки эскиза до финальной полировки. В ассортименте SOKOLOV представлены украшения из золота 585 пробы и серебра 925 пробы, инкрустированные бриллиантами, драгоценными и полудрагоценными камнями, а также фианитами.</p>
+                <p>Бренд активно сотрудничает с росси
+                    йскими и международными дизайнерами, постоянно выпуская новые коллекции, отражающие актуальные модные тенденции. SOKOLOV – это не только украшения, но и эмоции, которые они дарят, становясь символом любви, внимания и самых светлых воспоминаний.</p>
+            </div>
+            <div class="shop-in-trk">
+                <a href="../images/trkAtriumSokolov.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/trkAtriumSokolov.jpg" alt="Витрина ювелирного магазина SOKOLOV в ТРК Атриум">
+                </a>
+                <p><em>ТРК Атриум, 1 этаж</em></p>
+            </div>
+        </article>
+
+        <div class="shop-banner">
+            <a href="https://sokolov.ru/promo/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу акций и специальных предложений SOKOLOV" class="banner">
+                <img src="../images/bannerSokolov.jpg" alt="Акция: скидки на ювелирные украшения SOKOLOV!" loading="lazy">
+            </a>
+        </div>
+    </div>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>

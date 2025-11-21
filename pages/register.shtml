@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <form id="register-form" class="register-form" action="/register" method="post" novalidate>
+      <h2>Регистрация</h2>
+    
+      <fieldset>
+        <legend>Ваша учетная запись</legend>
+        <label for="contact">Email или номер телефона</label>
+        <input id="contact" name="contact" type="text"
+               inputmode="tel"
+               placeholder="+7 (999) 999-99-99 или example@mail.ru"
+               pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)|(^\+?\d[\d\s\-\(\)]{6,}$)"
+               title="Email или номер телефона" required/>
+
+        <label for="password">Пароль</label>
+        <input id="password" name="password" type="password" required
+               pattern="(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).*" 
+               title="Минимум 8 символов, заглавная и строчная буквы, цифра и спецсимвол" autocomplete="new-password" />
+    
+        <label for="password_confirm">Подтвердите пароль</label>
+        <input id="password_confirm" name="password_confirm" type="password" required autocomplete="new-password" />
+      </fieldset>
+    
+      <fieldset>
+        <legend>Персональные данные</legend>
+    
+        <div class="row">
+          <label for="last_name">Фамилия</label>
+          <input id="last_name" name="last_name" type="text" required />
+        </div>
+    
+        <div class="row">
+          <label for="first_name">Имя</label>
+          <input id="first_name" name="first_name" type="text" required />
+        </div>
+            
+        <label for="birthdate">Дата рождения</label>
+        <input id="birthdate" name="birthdate" type="date" />
+    
+        <label for="gender">Пол</label>
+        <select id="gender" name="gender">
+          <option value="">Не указывать</option>
+          <option value="мужской">Мужской</option>
+          <option value="женский">Женский</option>
+          <option value="другое">Другое</option>
+        </select>
+      </fieldset>
+      
+      <fieldset class="checkboxes">
+        <label><input id="subscribe" name="subscribe" type="checkbox" /> Подписаться на рассылку</label>
+    
+        <label class="agree">
+          <input id="agree" name="agree" type="checkbox" required />
+          Я согласен(а) с <a href="/documents/politika-konfidencialnosti.pdf" target="_blank" rel="noopener">Политикой конфиденциальности</a> и <a href="/documents/usloviya-ispolzovaniya.pdf" target="_blank" rel="noopener">Условиями использования</a>
+        </label>
+      </fieldset>
+    
+      <button type="submit" class="btn-send" id="submit-btn">Создать аккаунт</button>
+    </form>
+</main>
+<!--#include virtual="../base/footer.html" -->
+</body>
+</html>
