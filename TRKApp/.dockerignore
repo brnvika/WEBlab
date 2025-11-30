@@ -1,0 +1,44 @@
+# Исключаем папки сборки и зависимости
+**/bin/
+**/obj/
+**/out/
+
+# Исключаем файлы пользователя и IDE
+**/.vs/
+**/.vscode/
+**/.idea/
+**/*.user
+**/*.suo
+**/.DS_Store
+
+# Исключаем Git
+**/.git/
+**/.gitignore
+**/.gitattributes
+
+# Исключаем документацию (но оставляем документы проекта)
+**/README*.md
+**/DOCKER.md
+**/LICENSE
+**/Thumbs.db
+**/*~
+
+# Исключаем файлы Docker
+**/Dockerfile*
+**/docker-compose*
+**/.dockerignore
+
+# Исключаем папки node_modules (если есть)
+**/node_modules/
+
+# Исключаем логи
+**/logs/
+**/*.log
+
+# НЕ исключаем нужные папки проекта:
+# !images/
+# !styles/
+# !scripts/
+# !Pages/
+# !base/
+# !documents/

@@ -1,0 +1,15 @@
+services:
+  trkapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trkapp_container
+    ports:
+      - "5000:8080"  # Приложение будет доступно на localhost:5000
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+    restart: unless-stopped
+    # Опционально: volumes для статических файлов или данных
+    # volumes:
+    #   - ./wwwroot:/app/wwwroot:ro
