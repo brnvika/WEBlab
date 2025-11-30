@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TRKApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0197af8e2d06bfbaf42aaf712a5ca632f0ed741")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be783cf140d255ebce7f6386760e49c71d00afe3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TRKApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TRKApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
