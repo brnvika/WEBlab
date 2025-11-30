@@ -54,13 +54,11 @@
         <label for="birthdate">Дата рождения</label>
         <input id="birthdate" name="birthdate" type="date" />
     
-        <label for="gender">Пол</label>
-        <select id="gender" name="gender">
-          <option value="">Не указывать</option>
-          <option value="мужской">Мужской</option>
-          <option value="женский">Женский</option>
-          <option value="другое">Другое</option>
-        </select>
+        <label>Пол</label>
+        <div class="gender-checkboxes">
+          <label><input type="radio" name="gender" value="мужской" /> Мужской</label>
+          <label><input type="radio" name="gender" value="женский" /> Женский</label>
+        </div>
       </fieldset>
       
       <fieldset class="checkboxes">

@@ -1,9 +1,20 @@
 using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// Регистрация MediatR
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
+// Регистрация DataContext
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Регистрация PasswordHasher
+builder.Services.AddScoped<TRKApp.Services.IPasswordHasher, TRKApp.Services.PasswordHasher>();
 
 var app = builder.Build();
 
