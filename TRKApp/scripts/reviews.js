@@ -78,6 +78,32 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+// Показать ошибку валидации
+function showValidationError(message) {
+    // Удаляем предыдущие ошибки
+    const existingError = document.querySelector('.validation-error');
+    if (existingError) {
+        existingError.remove();
+    }
+
+    // Создаём новое сообщение об ошибке
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'validation-error';
+    errorDiv.textContent = message;
+
+    // Вставляем перед кнопкой отправки
+    const form = document.getElementById('review-form');
+    const submitButton = form?.querySelector('button[type="submit"]');
+    if (submitButton && submitButton.parentElement) {
+        submitButton.parentElement.insertBefore(errorDiv, submitButton);
+    }
+
+    // Автоматически скрываем через 5 секунд
+    setTimeout(() => {
+        errorDiv.remove();
+    }, 5000);
+}
+
 // Отправка отзыва
 document.getElementById('review-form')?.addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -98,12 +124,22 @@ document.getElementById('review-form')?.addEventListener('submit', async functio
         consultantWork: parseInt(document.querySelector('input[name="consultantWork"]:checked')?.value || '0'),
         cashierWork: parseInt(document.querySelector('input[name="cashierWork"]:checked')?.value || '0'),
         qualityGoods: parseInt(document.querySelector('input[name="qualityGoods"]:checked')?.value || '0'),
-        comment: document.getElementById('comment').value
+        comment: document.querySelector('textarea[name="comment"]')?.value?.trim() || ''
     };
 
     // Валидация
     if (!formData.storeWork || !formData.consultantWork || !formData.cashierWork || !formData.qualityGoods) {
-        alert('Пожалуйста, поставьте все оценки');
+        showValidationError('Пожалуйста, поставьте все оценки (от 1 до 5 звёзд)');
+        return;
+    }
+
+    if (!formData.comment || formData.comment.length < 10) {
+        showValidationError('Комментарий должен содержать минимум 10 символов');
+        return;
+    }
+
+    if (formData.comment.length > 500) {
+        showValidationError('Комментарий не должен превышать 500 символов');
         return;
     }
 

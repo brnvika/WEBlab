@@ -57,21 +57,21 @@ public class UsersController : ControllerBase
                 SameSite = SameSiteMode.Lax,
                 Expires = DateTimeOffset.UtcNow.AddDays(7)
             });
-            Response.Cookies.Append("userName", result.Name, new CookieOptions
+            Response.Cookies.Append("userName", result.Name ?? "", new CookieOptions
             {
                 HttpOnly = false,
                 Secure = false,
                 SameSite = SameSiteMode.Lax,
                 Expires = DateTimeOffset.UtcNow.AddDays(7)
             });
-            Response.Cookies.Append("userSurname", result.Surname, new CookieOptions
+            Response.Cookies.Append("userSurname", result.Surname ?? "", new CookieOptions
             {
                 HttpOnly = false,
                 Secure = false,
                 SameSite = SameSiteMode.Lax,
                 Expires = DateTimeOffset.UtcNow.AddDays(7)
             });
-            Response.Cookies.Append("userEmail", result.Email, new CookieOptions
+            Response.Cookies.Append("userEmail", result.Email ?? "", new CookieOptions
             {
                 HttpOnly = false,
                 Secure = false,

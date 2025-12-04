@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace TRKApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20251204181320_AddShopsTable")]
+    partial class AddShopsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,11 +72,23 @@ namespace TRKApp.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("ShopAssortiment")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ShopCollection")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("ShopDescription")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("ShopInformation")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ShopLocation")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -85,7 +100,19 @@ namespace TRKApp.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("ShopPrice")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ShopQuality")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("ShopSait")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ShopStyle")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -96,31 +123,6 @@ namespace TRKApp.Migrations
                     b.HasKey("ShopId");
 
                     b.ToTable("Shops");
-                });
-
-            modelBuilder.Entity("ShopCharacteristic", b =>
-                {
-                    b.Property<Guid>("CharacteristicId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("character varying(500)");
-
-                    b.Property<string>("Parameter")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
-                    b.Property<Guid>("ShopId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("CharacteristicId");
-
-                    b.HasIndex("ShopId");
-
-                    b.ToTable("ShopCharacteristics");
                 });
 
             modelBuilder.Entity("User", b =>
@@ -174,22 +176,6 @@ namespace TRKApp.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("ShopCharacteristic", b =>
-                {
-                    b.HasOne("Shop", "Shop")
-                        .WithMany("Characteristics")
-                        .HasForeignKey("ShopId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Shop");
-                });
-
-            modelBuilder.Entity("Shop", b =>
-                {
-                    b.Navigation("Characteristics");
                 });
 #pragma warning restore 612, 618
         }

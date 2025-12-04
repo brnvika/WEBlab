@@ -1,29 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Атриум</title>
+    <title>ТРК Атриум</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/aside.css">
     <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="../styles/reviews.css">
 </head>
 <body>
 <!--#include virtual="../base/header.html" -->
 <!--#include virtual="../base/aside.html" -->
 <main>
     <div class="shop-page-container">
-        <h1>Ювелирный магазин SOKOLOV</h1>
-
+        <h1>Загрузка...</h1>
         <article>
             <div class="shop-image">
-                <img src="../images/logoSokolov.jpg" alt="Логотип ювелирного магазина SOKOLOV">
+                <img src="" alt="Логотип магазина">
             </div>
             <div class="shop-info">
                 <h3>О магазине</h3>
-                <p>Добро пожаловать в мир SOKOLOV – одного из крупнейших ювелирных брендов России, который известен своим безупречным качеством, современным дизайном и широким ассортиментом украшений. В нашем магазине вы найдете идеальное украшение для любого случая: от повседневных аксессуаров до изысканных изделий для особых моментов.</p>
-                <p>Перейти на <a href="https://sokolov.ru/" target="_blank" rel="noopener noreferrer">официальный сайт SOKOLOV</a></p>
+                <p>Загрузка информации...</p>
+                <p>Перейти на <a href="#" target="_blank" rel="noopener noreferrer">официальный сайт магазина</a></p>
             </div>
         </article>
 
@@ -31,86 +31,61 @@
             <table class="product-characteristics-table">
                 <thead>
                 <tr>
-                    <th colspan="2">Ключевые особенности ювелирного магазина SOKOLOV</th>
+                    <th colspan="2">Ключевые особенности</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td><strong>Ассортимент</strong></td>
-                    <td>Обширный выбор ювелирных изделий из золота и серебра: кольца, серьги, подвески, браслеты, колье, броши, часы. Вставки из драгоценных, полудрагоценных камней и фианитов.</td>
-                </tr>
-                <tr>
-                    <td><strong>Качество</strong></td>
-                    <td>Строгий контроль качества на всех этапах производства, соответствие государственным стандартам, использование высокопробных металлов.</td>
-                </tr>
-                <tr>
-                    <td><strong>Дизайн</strong></td>
-                    <td>Разнообразие стилей: от классики и минимализма до ультрамодных трендов и эксклюзивных коллекций. Регулярное обновление модельного ряда.</td>
-                </tr>
-                <tr>
-                    <td><strong>Ценовой сегмент</strong></td>
-                    <td>Широкий диапазон цен, от доступных изделий до украшений премиум-класса, что позволяет каждому найти что-то для себя.</td>
-                </tr>
-                <tr>
-                    <td><strong>Сервис</strong></td>
-                    <td>Профессиональные консультанты, индивидуальный подход к каждому клиенту, помощь в выборе украшения и подарка.</td>
-                </tr>
-                <tr>
-                    <td><strong>Программы лояльности</strong></td>
-                    <td>Возможность участия в бонусных программах и специальных акциях для постоянных покупателей.</td>
-                </tr>
-                <tr>
-                    <td><strong>Локация</strong></td>
-                    <td>Удобное расположение в ТРК Атриум</td>
-                </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">Загрузка характеристик...</td>
+                    </tr>
                 </tbody>
             </table>
         </article>
         <article>
             <div class="shop-full-description">
-                <h3>Подробная информация о бренде SOKOLOV</h3>
-                <p>SOKOLOV – это крупнейший российский ювелирный бренд, который начал свою историю в 1993 году в Костроме. За более чем четверть века SOKOLOV превратился из небольшой семейной мастерской в международную компанию, продукция которой представлена в тысячах магазинов по всему миру. Ежегодно бренд выпускает миллионы ювелирных изделий, отличающихся уникальным дизайном и высоким качеством.</p>
-                <p>Производство SOKOLOV – одно из крупнейших в Европе, оснащенное самым современным оборудованием. Компания уделяет огромное внимание инновациям и контролю качества на каждом этапе – от разработки эскиза до финальной полировки. В ассортименте SOKOLOV представлены украшения из золота 585 пробы и серебра 925 пробы, инкрустированные бриллиантами, драгоценными и полудрагоценными камнями, а также фианитами.</p>
-                <p>Бренд активно сотрудничает с росси
-                    йскими и международными дизайнерами, постоянно выпуская новые коллекции, отражающие актуальные модные тенденции. SOKOLOV – это не только украшения, но и эмоции, которые они дарят, становясь символом любви, внимания и самых светлых воспоминаний.</p>
+                <h3>Подробная информация</h3>
+                <p>Загрузка подробной информации...</p>
             </div>
             <div class="shop-in-trk">
-                <a href="../images/trkAtriumSokolov.jpg" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/trkAtriumSokolov.jpg" alt="Витрина ювелирного магазина SOKOLOV в ТРК Атриум">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="Витрина магазина в ТРК Атриум">
                 </a>
-                <p><em>ТРК Атриум, 1 этаж</em></p>
+                <p><em>ТРК Атриум</em></p>
             </div>
         </article>
-        <div class="shop-bottom-section">
-            <form class="shop-review-form" action="#" method="post" novalidate>
+        <div class="shop-bottom-section" data-store-name="Sokolov">
+            <div id="login-prompt" style="display: none;">
+                <p>Для оставления отзыва необходимо <a href="/pages/authorization.shtml">войти в аккаунт</a> или <a href="/pages/register.shtml">зарегистрироваться</a></p>
+            </div>
+            <form id="review-form" class="shop-review-form" action="#" method="post" novalidate style="display: none;">
                 <h2>Оставить отзыв о магазине</h2>
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы магазина</span>
                     <div class="rating-area">
-                        <input type="radio" id="store-star-5" name="rating-store" value="5">
+                        <input type="radio" id="store-star-5" name="storeWork" value="5" required>
                         <label for="store-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="store-star-4" name="rating-store" value="4">
+                        <input type="radio" id="store-star-4" name="storeWork" value="4">
                         <label for="store-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="store-star-3" name="rating-store" value="3">
+                        <input type="radio" id="store-star-3" name="storeWork" value="3">
                         <label for="store-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="store-star-2" name="rating-store" value="2">
+                        <input type="radio" id="store-star-2" name="storeWork" value="2">
                         <label for="store-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="store-star-1" name="rating-store" value="1">
+                        <input type="radio" id="store-star-1" name="storeWork" value="1">
                         <label for="store-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы консультанта</span>
                     <div class="rating-area">
-                        <input type="radio" id="consultant-star-5" name="rating-consultant" value="5">
+                        <input type="radio" id="consultant-star-5" name="consultantWork" value="5" required>
                         <label for="consultant-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="consultant-star-4" name="rating-consultant" value="4">
+                        <input type="radio" id="consultant-star-4" name="consultantWork" value="4">
                         <label for="consultant-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="consultant-star-3" name="rating-consultant" value="3">
+                        <input type="radio" id="consultant-star-3" name="consultantWork" value="3">
                         <label for="consultant-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="consultant-star-2" name="rating-consultant" value="2">
+                        <input type="radio" id="consultant-star-2" name="consultantWork" value="2">
                         <label for="consultant-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="consultant-star-1" name="rating-consultant" value="1">
+                        <input type="radio" id="consultant-star-1" name="consultantWork" value="1">
                         <label for="consultant-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
@@ -118,52 +93,58 @@
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы кассира</span>
                     <div class="rating-area">
-                        <input type="radio" id="cashier-star-5" name="rating-cashier" value="5">
+                        <input type="radio" id="cashier-star-5" name="cashierWork" value="5" required>
                         <label for="cashier-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="cashier-star-4" name="rating-cashier" value="4">
+                        <input type="radio" id="cashier-star-4" name="cashierWork" value="4">
                         <label for="cashier-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="cashier-star-3" name="rating-cashier" value="3">
+                        <input type="radio" id="cashier-star-3" name="cashierWork" value="3">
                         <label for="cashier-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="cashier-star-2" name="rating-cashier" value="2">
+                        <input type="radio" id="cashier-star-2" name="cashierWork" value="2">
                         <label for="cashier-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="cashier-star-1" name="rating-cashier" value="1">
+                        <input type="radio" id="cashier-star-1" name="cashierWork" value="1">
                         <label for="cashier-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
 
                 <label class="review-field">
-                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <span class="criterion-title">Оцените качество товаров в магазине</span>
                     <div class="rating-area">
-                        <input type="radio" id="cleanliness-star-5" name="rating-cleanliness" value="5">
-                        <label for="cleanliness-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="cleanliness-star-4" name="rating-cleanliness" value="4">
-                        <label for="cleanliness-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="cleanliness-star-3" name="rating-cleanliness" value="3">
-                        <label for="cleanliness-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="cleanliness-star-2" name="rating-cleanliness" value="2">
-                        <label for="cleanliness-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="cleanliness-star-1" name="rating-cleanliness" value="1">
-                        <label for="cleanliness-star-1" title="Оценка «1»"></label>
+                        <input type="radio" id="quality-star-5" name="qualityGoods" value="5" required>
+                        <label for="quality-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="quality-star-4" name="qualityGoods" value="4">
+                        <label for="quality-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="quality-star-3" name="qualityGoods" value="3">
+                        <label for="quality-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="quality-star-2" name="qualityGoods" value="2">
+                        <label for="quality-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="quality-star-1" name="qualityGoods" value="1">
+                        <label for="quality-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
 
                 <label class="review-field">
-                    <span class="criterion-title">Комментарий</span>
-                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                    <span class="criterion-title">Комментарий (минимум 10 символов)</span>
+                    <textarea name="comment" placeholder="Ваш отзыв..." required minlength="10"></textarea>
                 </label>
-
+                <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
                 <div class="form-actions">
                     <button type="submit">Отправить отзыв</button>
                 </div>
             </form>
+            <div id="reviews-section">
+                <h2>Отзывы о магазине</h2>
+                <div id="reviews-list"></div>
+            </div>
             <div class="shop-banner">
-                <a href="https://sokolov.ru/promo/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу акций и специальных предложений SOKOLOV" class="banner">
-                    <img src="../images/bannerSokolov.jpg" alt="Акция: скидки на ювелирные украшения SOKOLOV!" loading="lazy">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="Баннер магазина">
                 </a>
             </div>
         </div>
     </div>
 </main>
-<!--#include virtual="../base/footer.html" -->
+<script src="../scripts/shop.js"></script>
+<script src="../scripts/reviews.js"></script>
 </body>
+<!--#include virtual="../base/footer.html" -->
 </html>

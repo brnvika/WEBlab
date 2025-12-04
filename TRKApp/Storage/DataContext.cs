@@ -8,4 +8,6 @@ public class DataContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
     public virtual DbSet<Review> Reviews { get; set; }
+    public virtual DbSet<Shop> Shops { get; set; }
+    public virtual DbSet<ShopCharacteristic> ShopCharacteristics { get; set; }
 }

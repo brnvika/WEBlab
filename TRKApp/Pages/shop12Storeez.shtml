@@ -8,76 +8,61 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/aside.css">
     <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="../styles/reviews.css">
 </head>
 <body>
 <!--#include virtual="../base/header.html" -->
 <!--#include virtual="../base/aside.html" -->
 <main>
     <div class="shop-page-container">
-        <h2>Магазин одежды 12 STOREEZ</h2>
+        <h1>Загрузка...</h1>
         <article>
             <div class="shop-image">
-                <img src="../images/logo12Storeez.jpg" alt="Магазин 12 STOREEZ">
+                <img src="" alt="Логотип магазина">
             </div>
             <div class="shop-info">
-                <h3>Описание магазина</h3>
-                <p>12 STOREEZ — российский бренд, предлагающий стильную одежду и аксессуары для мужчин и женщин, вдохновленные современными трендами и минималистичным дизайном.</p>
-                <p>Перейти на <a href="https://12storeez.com/">официальный сайт магазина</a></p>
+                <h3>О магазине</h3>
+                <p>Загрузка информации...</p>
+                <p>Перейти на <a href="#" target="_blank" rel="noopener noreferrer">официальный сайт магазина</a></p>
             </div>
         </article>
+
         <article>
             <table class="product-characteristics-table">
                 <thead>
                 <tr>
-                    <th colspan="2">Основные характеристики магазина 12 STOREEZ</th>
+                    <th colspan="2">Ключевые особенности</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td><strong>Ассортимент</strong></td>
-                    <td>Основная специализация — мужская и женская одежда, включая платья, брюки, джинсы, верхнюю одежду, трикотаж. Также представлены обувь и аксессуары.</td>
-                </tr>
-                <tr>
-                    <td><strong>Стиль</strong></td>
-                    <td>Современный минимализм, casual chic, с акцентом на качество, лаконичные силуэты и нейтральную палитру. Идеально для создания базового гардероба.</td>
-                </tr>
-                <tr>
-                    <td><strong>Качество</strong></td>
-                    <td>Высокое качество материалов (натуральные ткани: хлопок, шерсть, лен) и пошива, внимание к деталям. Ориентация на долговечность изделий.</td>
-                </tr>
-                <tr>
-                    <td><strong>Обновление коллекций</strong></td>
-                    <td>Регулярные поступления новых моделей, соответствующие последним тенденциям моды, с фокусом на сезонные коллекции.</td>
-                </tr>
-                <tr>
-                    <td><strong>Ценовой сегмент</strong></td>
-                    <td>Средний+, ориентирован на покупателей, ценящих качество, стиль и комфорт.</td>
-                </tr>
-                <tr>
-                    <td><strong>Локация</strong></td>
-                    <td>Удобное расположение в ТРК Атриум, с легким доступом.</td>
-                </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">Загрузка характеристик...</td>
+                    </tr>
                 </tbody>
             </table>
         </article>
         <article>
             <div class="shop-full-description">
-                <h3>Подробная информация о 12 STOREEZ</h3>
-                <p>12 STOREEZ — это бренд, который завоевал популярность благодаря своей приверженности к минимализму, качеству и актуальным трендам. Он предлагает одежду, которая легко вписывается в повседневный гардероб, сочетая в себе элегантность и комфорт. Магазин в ТРК Атриум — это место, где можно найти идеальные базовые вещи и создать множество стильных образов.</p>
-                <p>Особое внимание бренд уделяет выбору тканей и фурнитуры, гарантируя долговечность и приятные тактильные ощущения. Коллекции 12 STOREEZ всегда отражают последние модные веяния, но при этом сохраняют свою вневременную привлекательность, позволяя покупателям создавать актуальные и гармоничные образы.</p>
+                <h3>Подробная информация</h3>
+                <p>Загрузка подробной информации...</p>
             </div>
             <div class="shop-in-trk">
-                <a href="../images/12Storeez_atrium.jpg" target="_blank"><img src="../images/12Storeez_atrium.jpg" alt="Витрина магазина 12 STOREEZ в ТРК Атриум"></a>
-                <p><em>ТРК Атриум, 1 этаж</em></p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="Витрина магазина в ТРК Атриум">
+                </a>
+                <p><em>ТРК Атриум</em></p>
             </div>
         </article>
-        <div class="shop-bottom-section">
-            <form class="shop-review-form" action="#" method="post" novalidate>
+        <div class="shop-bottom-section" data-store-name="12 STOREEZ">
+            <div id="login-prompt" style="display: none;">
+                <p>Для оставления отзыва необходимо <a href="/pages/authorization.shtml">войти в аккаунт</a> или <a href="/pages/register.shtml">зарегистрироваться</a></p>
+            </div>
+            <form id="review-form" class="shop-review-form" action="#" method="post" novalidate style="display: none;">
                 <h2>Оставить отзыв о магазине</h2>
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы магазина</span>
                     <div class="rating-area">
-                        <input type="radio" id="store-star-5" name="rating-store" value="5">
+                        <input type="radio" id="store-star-5" name="storeWork" value="5" required>
                         <label for="store-star-5" title="Оценка «5»"></label>
                         <input type="radio" id="store-star-4" name="rating-store" value="4">
                         <label for="store-star-4" title="Оценка «4»"></label>
@@ -92,7 +77,7 @@
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы консультанта</span>
                     <div class="rating-area">
-                        <input type="radio" id="consultant-star-5" name="rating-consultant" value="5">
+                        <input type="radio" id="consultant-star-5" name="consultantWork" value="5" required>
                         <label for="consultant-star-5" title="Оценка «5»"></label>
                         <input type="radio" id="consultant-star-4" name="rating-consultant" value="4">
                         <label for="consultant-star-4" title="Оценка «4»"></label>
@@ -108,7 +93,7 @@
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы кассира</span>
                     <div class="rating-area">
-                        <input type="radio" id="cashier-star-5" name="rating-cashier" value="5">
+                        <input type="radio" id="cashier-star-5" name="cashierWork" value="5" required>
                         <label for="cashier-star-5" title="Оценка «5»"></label>
                         <input type="radio" id="cashier-star-4" name="rating-cashier" value="4">
                         <label for="cashier-star-4" title="Оценка «4»"></label>
@@ -122,9 +107,9 @@
                 </label>
 
                 <label class="review-field">
-                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <span class="criterion-title">Оцените качество товаров в магазине</span>
                     <div class="rating-area">
-                        <input type="radio" id="cleanliness-star-5" name="rating-cleanliness" value="5">
+                        <input type="radio" id="cleanliness-star-5" name="qualityGoods" value="5" required>
                         <label for="cleanliness-star-5" title="Оценка «5»"></label>
                         <input type="radio" id="cleanliness-star-4" name="rating-cleanliness" value="4">
                         <label for="cleanliness-star-4" title="Оценка «4»"></label>
@@ -139,7 +124,7 @@
 
                 <label class="review-field">
                     <span class="criterion-title">Комментарий</span>
-                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                    <textarea name="comment" placeholder="Расскажите о своем опыте покупки (минимум 10 символов)" minlength="10" maxlength="500" required></textarea>
                 </label>
 
                 <div class="form-actions">
@@ -152,8 +137,18 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Список отзывов -->
+        <div class="reviews-list-section">
+            <h2>Отзывы покупателей</h2>
+            <div id="reviews-list" class="reviews-list">
+                <p>Загрузка отзывов...</p>
+            </div>
+        </div>
     </div>
 </main>
+<script src="../scripts/shop.js"></script>
+<script src="../scripts/reviews.js"></script>
 <!--#include virtual="../base/footer.html" -->
 </body>
 </html>

@@ -15,12 +15,61 @@
 
 /* Приглашение к авторизации */
 #login-prompt {
-    background-color: #fff3cd;
-    border: 1px solid #ffc107;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    border: 3px solid whitesmoke;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+    padding: 30px 40px;
+    border-radius: 12px;
+    margin: 40px auto;
     text-align: center;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-prompt p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+#login-prompt a {
+    color: #8b5cf6;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+#login-prompt a:hover {
+    color: #6d28d9;
+    border-bottom-color: #8b5cf6;
+    text-shadow: 0 0 8px rgba(138, 43, 226, 0.3);
+}
+
+/* Сообщение об ошибке валидации */
+.validation-error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #login-prompt a {

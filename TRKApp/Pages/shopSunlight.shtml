@@ -1,170 +1,150 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Атриум</title>
+    <title>ТРК Атриум</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/aside.css">
     <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="../styles/reviews.css">
 </head>
+<body>
 <!--#include virtual="../base/header.html" -->
 <!--#include virtual="../base/aside.html" -->
-<body>
 <main>
-<div class="shop-page-container">
-    <h1>Ювелирный магазин Sunlight</h1>
-
-    <article>
-        <div class="shop-image">
-            <img src="../images/logoSunlight.jpg" alt="Логотип Sunlight" loading="lazy">
-        </div>
-
-        <div class="shop-info">
-            <h3>О магазине</h3>
-            <p>Sunlight — популярный ювелирный ритейлер, предлагающий широкий ассортимент украшений из золота и серебра по доступным ценам. В нашем магазине, расположенном в ТРЦ [Название торгового центра], вы найдете современные и классические модели, идеальные как для повседневного ношения, так и для праздничных событий.</p>
-            <p>Посетите официальный сайт Sunlight: <a href="https://www.sunlight.net/" target="_blank" rel="noopener noreferrer">sunlight.net</a></p>
-        </div>
-    </article>
-
-    <article>
-        <table class="product-characteristics-table" aria-labelledby="chars-title">
-            <thead>
-            <tr><th colspan="2" id="chars-title">Ключевые характеристики магазина Sunlight</th></tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><strong>Ассортимент</strong></td>
-                <td>Большой выбор украшений: кольца, серьги, подвески, браслеты, цепочки, комплекты и часы. Модели с драгоценными и полудрагоценными камнями, а также с фианитами.</td>
-            </tr>
-            <tr>
-                <td><strong>Материалы и проба</strong></td>
-                <td>Изделия из золота 585 пробы, серебра 925 пробы, ювелирные покрытия и вставки высокого качества; строгий контроль проб и маркировки.</td>
-            </tr>
-            <tr>
-                <td><strong>Дизайн</strong></td>
-                <td>Современные тренды, лаконичная классика и доступные модные коллекции — для любого возраста и бюджета.</td>
-            </tr>
-            <tr>
-                <td><strong>Ценовой сегмент</strong></td>
-                <td>Доступный и средний ценовой сегмент с частыми акциями и выгодными предложениями.</td>
-            </tr>
-            <tr>
-                <td><strong>Сервис</strong></td>
-                <td>Профессиональное обслуживание, помощь в выборе подарка, гарантийное и постгарантийное обслуживание, ювелирная чистка и ремонт.</td>
-            </tr>
-            <tr>
-                <td><strong>Программы и акции</strong></td>
-                <td>Сезонные скидки, программы лояльности, специальные предложения для постоянных клиентов и подарочные сертификаты.</td>
-            </tr>
-            <tr>
-                <td><strong>Локация</strong></td>
-                <td>Удобное расположение в ТРК Атриум</td>
-            </tr>
-            </tbody>
-        </table>
-    </article>
-    <article>
-        <div class="shop-full-description">
-            <h3>Подробно о Sunlight</h3>
-            <p>Sunlight — российская сеть ювелирных магазинов, ориентированная на широкий круг покупателей. Бренд известен высокой скоростью обновления коллекций и ориентацией на актуальные модные тенденции. Sunlight сочетает массовую доступность и стандарты качества, что делает украшения привлекательными как для подарков, так и для каждодневного использования.</p>
-
-            <p>Производственные и контрольные процедуры компании направлены на соответствие нормативам и гарантии безопасности изделий. Кроме готовых коллекций, Sunlight предлагает услуги по индивидуальному подбору и изготовлению украшений под заказ.</p>
-
-            <p>Ассортимент регулярно дополняется сезонными линиями, а команда консультантов поможет подобрать украшение по назначению, стилю и бюджету клиента.</p>
-        </div>
-
-        <div class="shop-in-trk">
-            <a href="../images/trkSunlight.jpg" target="_blank" rel="noopener noreferrer">
-                <img src="../images/trkSunlight.jpg" alt="Витрина ювелирного магазина Sunlight в ТРК Атриум" loading="lazy">
-            </a>
-            <p><em>ТРК Атриум, 1 этаж</em></p>
-        </div>
-    </article>
-    <div class="shop-bottom-section">
-        <form class="shop-review-form" action="#" method="post" novalidate>
-            <h2>Оставить отзыв о магазине</h2>
-            <label class="review-field">
-                <span class="criterion-title">Оцените качество работы магазина</span>
-                <div class="rating-area">
-                    <input type="radio" id="store-star-5" name="rating-store" value="5">
-                    <label for="store-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="store-star-4" name="rating-store" value="4">
-                    <label for="store-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="store-star-3" name="rating-store" value="3">
-                    <label for="store-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="store-star-2" name="rating-store" value="2">
-                    <label for="store-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="store-star-1" name="rating-store" value="1">
-                    <label for="store-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-            <label class="review-field">
-                <span class="criterion-title">Оцените качество работы консультанта</span>
-                <div class="rating-area">
-                    <input type="radio" id="consultant-star-5" name="rating-consultant" value="5">
-                    <label for="consultant-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="consultant-star-4" name="rating-consultant" value="4">
-                    <label for="consultant-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="consultant-star-3" name="rating-consultant" value="3">
-                    <label for="consultant-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="consultant-star-2" name="rating-consultant" value="2">
-                    <label for="consultant-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="consultant-star-1" name="rating-consultant" value="1">
-                    <label for="consultant-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-
-            <label class="review-field">
-                <span class="criterion-title">Оцените качество работы кассира</span>
-                <div class="rating-area">
-                    <input type="radio" id="cashier-star-5" name="rating-cashier" value="5">
-                    <label for="cashier-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="cashier-star-4" name="rating-cashier" value="4">
-                    <label for="cashier-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="cashier-star-3" name="rating-cashier" value="3">
-                    <label for="cashier-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="cashier-star-2" name="rating-cashier" value="2">
-                    <label for="cashier-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="cashier-star-1" name="rating-cashier" value="1">
-                    <label for="cashier-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-
-            <label class="review-field">
-                <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
-                <div class="rating-area">
-                    <input type="radio" id="cleanliness-star-5" name="rating-cleanliness" value="5">
-                    <label for="cleanliness-star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="cleanliness-star-4" name="rating-cleanliness" value="4">
-                    <label for="cleanliness-star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="cleanliness-star-3" name="rating-cleanliness" value="3">
-                    <label for="cleanliness-star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="cleanliness-star-2" name="rating-cleanliness" value="2">
-                    <label for="cleanliness-star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="cleanliness-star-1" name="rating-cleanliness" value="1">
-                    <label for="cleanliness-star-1" title="Оценка «1»"></label>
-                </div>
-            </label>
-
-            <label class="review-field">
-                <span class="criterion-title">Комментарий</span>
-                <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
-            </label>
-
-            <div class="form-actions">
-                <button type="submit">Отправить отзыв</button>
+    <div class="shop-page-container">
+        <h1>Загрузка...</h1>
+        <article>
+            <div class="shop-image">
+                <img src="" alt="Логотип магазина">
             </div>
-        </form>
-        <div class="shop-banner">
-            <a href="https://www.sunlight.net" target="_blank" rel="noopener noreferrer" title="Перейти к акциям Sunlight" class="banner">
-                <img src="../images/saleSunlight.jpg" alt="Акции и специальные предложения Sunlight" loading="lazy">
-            </a>
+            <div class="shop-info">
+                <h3>О магазине</h3>
+                <p>Загрузка информации...</p>
+                <p>Перейти на <a href="#" target="_blank" rel="noopener noreferrer">официальный сайт магазина</a></p>
+            </div>
+        </article>
+
+        <article>
+            <table class="product-characteristics-table">
+                <thead>
+                <tr>
+                    <th colspan="2">Ключевые особенности</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">Загрузка характеристик...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <div class="shop-full-description">
+                <h3>Подробная информация</h3>
+                <p>Загрузка подробной информации...</p>
+            </div>
+            <div class="shop-in-trk">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="Витрина магазина в ТРК Атриум">
+                </a>
+                <p><em>ТРК Атриум</em></p>
+            </div>
+        </article>
+        <div class="shop-bottom-section" data-store-name="Sunlight">
+            <div id="login-prompt" style="display: none;">
+                <p>Для оставления отзыва необходимо <a href="/pages/authorization.shtml">войти в аккаунт</a> или <a href="/pages/register.shtml">зарегистрироваться</a></p>
+            </div>
+            <form id="review-form" class="shop-review-form" action="#" method="post" novalidate style="display: none;">
+                <h2>Оставить отзыв о магазине</h2>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы магазина</span>
+                    <div class="rating-area">
+                        <input type="radio" id="store-star-5" name="storeWork" value="5" required>
+                        <label for="store-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="store-star-4" name="storeWork" value="4">
+                        <label for="store-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="store-star-3" name="storeWork" value="3">
+                        <label for="store-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="store-star-2" name="storeWork" value="2">
+                        <label for="store-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="store-star-1" name="storeWork" value="1">
+                        <label for="store-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы консультанта</span>
+                    <div class="rating-area">
+                        <input type="radio" id="consultant-star-5" name="consultantWork" value="5" required>
+                        <label for="consultant-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="consultant-star-4" name="consultantWork" value="4">
+                        <label for="consultant-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="consultant-star-3" name="consultantWork" value="3">
+                        <label for="consultant-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="consultant-star-2" name="consultantWork" value="2">
+                        <label for="consultant-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="consultant-star-1" name="consultantWork" value="1">
+                        <label for="consultant-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество работы кассира</span>
+                    <div class="rating-area">
+                        <input type="radio" id="cashier-star-5" name="cashierWork" value="5" required>
+                        <label for="cashier-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="cashier-star-4" name="cashierWork" value="4">
+                        <label for="cashier-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="cashier-star-3" name="cashierWork" value="3">
+                        <label for="cashier-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="cashier-star-2" name="cashierWork" value="2">
+                        <label for="cashier-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="cashier-star-1" name="cashierWork" value="1">
+                        <label for="cashier-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Оцените качество товаров в магазине</span>
+                    <div class="rating-area">
+                        <input type="radio" id="quality-star-5" name="qualityGoods" value="5" required>
+                        <label for="quality-star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="quality-star-4" name="qualityGoods" value="4">
+                        <label for="quality-star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="quality-star-3" name="qualityGoods" value="3">
+                        <label for="quality-star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="quality-star-2" name="qualityGoods" value="2">
+                        <label for="quality-star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="quality-star-1" name="qualityGoods" value="1">
+                        <label for="quality-star-1" title="Оценка «1»"></label>
+                    </div>
+                </label>
+
+                <label class="review-field">
+                    <span class="criterion-title">Комментарий (минимум 10 символов)</span>
+                    <textarea name="comment" placeholder="Ваш отзыв..." required minlength="10"></textarea>
+                </label>
+                <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
+                <div class="form-actions">
+                    <button type="submit">Отправить отзыв</button>
+                </div>
+            </form>
+            <div id="reviews-section">
+                <h2>Отзывы о магазине</h2>
+                <div id="reviews-list"></div>
+            </div>
+            <div class="shop-banner">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="Баннер магазина">
+                </a>
+            </div>
         </div>
     </div>
-</div>
 </main>
+<script src="../scripts/shop.js"></script>
+<script src="../scripts/reviews.js"></script>
 </body>
 <!--#include virtual="../base/footer.html" -->
 </html>
