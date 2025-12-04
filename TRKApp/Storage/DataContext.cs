@@ -6,5 +6,6 @@ public class DataContext : DbContext
     {
     }
 
-    public DbSet<User> Users { get; set; }
+    public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<Review> Reviews { get; set; }
 }

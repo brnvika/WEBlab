@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/aside.css">
     <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="../styles/reviews.css">
 </head>
 <body>
 <!--#include virtual="../base/header.html" -->
@@ -80,36 +81,39 @@
                 <p><em>ТРК Атриум, 2 этаж</em></p>
             </div>
         </article>
-        <div class="shop-bottom-section">
-            <form class="shop-review-form" action="#" method="post" novalidate>
+        <div class="shop-bottom-section" data-store-name="ECCO">
+            <div id="login-prompt" style="display: none;">
+                <p>Для оставления отзыва необходимо <a href="/pages/authorization.shtml">войти в аккаунт</a> или <a href="/pages/register.shtml">зарегистрироваться</a></p>
+            </div>
+            <form id="review-form" class="shop-review-form" action="#" method="post" novalidate style="display: none;">
                 <h2>Оставить отзыв о магазине</h2>
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы магазина</span>
                     <div class="rating-area">
-                        <input type="radio" id="store-star-5" name="rating-store" value="5">
+                        <input type="radio" id="store-star-5" name="storeWork" value="5" required>
                         <label for="store-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="store-star-4" name="rating-store" value="4">
+                        <input type="radio" id="store-star-4" name="storeWork" value="4">
                         <label for="store-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="store-star-3" name="rating-store" value="3">
+                        <input type="radio" id="store-star-3" name="storeWork" value="3">
                         <label for="store-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="store-star-2" name="rating-store" value="2">
+                        <input type="radio" id="store-star-2" name="storeWork" value="2">
                         <label for="store-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="store-star-1" name="rating-store" value="1">
+                        <input type="radio" id="store-star-1" name="storeWork" value="1">
                         <label for="store-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы консультанта</span>
                     <div class="rating-area">
-                        <input type="radio" id="consultant-star-5" name="rating-consultant" value="5">
+                        <input type="radio" id="consultant-star-5" name="consultantWork" value="5" required>
                         <label for="consultant-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="consultant-star-4" name="rating-consultant" value="4">
+                        <input type="radio" id="consultant-star-4" name="consultantWork" value="4">
                         <label for="consultant-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="consultant-star-3" name="rating-consultant" value="3">
+                        <input type="radio" id="consultant-star-3" name="consultantWork" value="3">
                         <label for="consultant-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="consultant-star-2" name="rating-consultant" value="2">
+                        <input type="radio" id="consultant-star-2" name="consultantWork" value="2">
                         <label for="consultant-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="consultant-star-1" name="rating-consultant" value="1">
+                        <input type="radio" id="consultant-star-1" name="consultantWork" value="1">
                         <label for="consultant-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
@@ -117,38 +121,38 @@
                 <label class="review-field">
                     <span class="criterion-title">Оцените качество работы кассира</span>
                     <div class="rating-area">
-                        <input type="radio" id="cashier-star-5" name="rating-cashier" value="5">
+                        <input type="radio" id="cashier-star-5" name="cashierWork" value="5" required>
                         <label for="cashier-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="cashier-star-4" name="rating-cashier" value="4">
+                        <input type="radio" id="cashier-star-4" name="cashierWork" value="4">
                         <label for="cashier-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="cashier-star-3" name="rating-cashier" value="3">
+                        <input type="radio" id="cashier-star-3" name="cashierWork" value="3">
                         <label for="cashier-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="cashier-star-2" name="rating-cashier" value="2">
+                        <input type="radio" id="cashier-star-2" name="cashierWork" value="2">
                         <label for="cashier-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="cashier-star-1" name="rating-cashier" value="1">
+                        <input type="radio" id="cashier-star-1" name="cashierWork" value="1">
                         <label for="cashier-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
 
                 <label class="review-field">
-                    <span class="criterion-title">Оцените чистоту и аккуратность товаров в магазине</span>
+                    <span class="criterion-title">Оцените качество товаров в магазине</span>
                     <div class="rating-area">
-                        <input type="radio" id="cleanliness-star-5" name="rating-cleanliness" value="5">
+                        <input type="radio" id="cleanliness-star-5" name="qualityGoods" value="5" required>
                         <label for="cleanliness-star-5" title="Оценка «5»"></label>
-                        <input type="radio" id="cleanliness-star-4" name="rating-cleanliness" value="4">
+                        <input type="radio" id="cleanliness-star-4" name="qualityGoods" value="4">
                         <label for="cleanliness-star-4" title="Оценка «4»"></label>
-                        <input type="radio" id="cleanliness-star-3" name="rating-cleanliness" value="3">
+                        <input type="radio" id="cleanliness-star-3" name="qualityGoods" value="3">
                         <label for="cleanliness-star-3" title="Оценка «3»"></label>
-                        <input type="radio" id="cleanliness-star-2" name="rating-cleanliness" value="2">
+                        <input type="radio" id="cleanliness-star-2" name="qualityGoods" value="2">
                         <label for="cleanliness-star-2" title="Оценка «2»"></label>
-                        <input type="radio" id="cleanliness-star-1" name="rating-cleanliness" value="1">
+                        <input type="radio" id="cleanliness-star-1" name="qualityGoods" value="1">
                         <label for="cleanliness-star-1" title="Оценка «1»"></label>
                     </div>
                 </label>
 
                 <label class="review-field">
                     <span class="criterion-title">Комментарий</span>
-                    <textarea name="comment" placeholder="Ваш отзыв..."></textarea>
+                    <textarea name="comment" placeholder="Расскажите о своем опыте покупки (минимум 10 символов)" minlength="10" maxlength="500" required></textarea>
                 </label>
 
                 <div class="form-actions">
@@ -161,8 +165,17 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Список отзывов -->
+        <div class="reviews-list-section">
+            <h2>Отзывы покупателей</h2>
+            <div id="reviews-list" class="reviews-list">
+                <p>Загрузка отзывов...</p>
+            </div>
+        </div>
     </div>
 </main>
+<script src="../scripts/reviews.js"></script>
 </body>
 <!--#include virtual="../base/footer.html" -->
 </html>

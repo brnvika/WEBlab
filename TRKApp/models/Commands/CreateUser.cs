@@ -15,7 +15,7 @@ public sealed class CreateUserCommand : IRequest<Guid>
     /// </summary>
     [FromBody]
     [Required]
-    public CreateUserDto User { get; init; }
+    public required CreateUserDto User { get; init; }
 }
 
 public sealed class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
@@ -38,7 +38,7 @@ public sealed class CreateUserCommandHandler : IRequestHandler<CreateUserCommand
             Name = request.User.Name,
             NumberPhone = request.User.NumberPhone,
             Email = request.User.Email,
-            PasswordHash = _passwordHasher.HashPassword(request.User.Password),
+            PasswordHash = _passwordHasher.HashPassword(request.User.Password!),
             BirthDate = request.User.BirthDate,
             Gender = request.User.Gender,
             Subscribe = request.User.Subscribe

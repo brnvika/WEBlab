@@ -7,23 +7,23 @@ public class User
     public Guid UserId { get; set; }
     
     [Required, MaxLength(ModelConstants.UserSurnameMaxLength)]
-    public string Surname { get; set; } = string.Empty;
+    public string? Surname { get; set; }
     
     [Required, MaxLength(ModelConstants.UserNameMaxLength)]
-    public string Name { get; set; } = string.Empty;
+    public string? Name { get; set; }
     
     [Required]
-    public string NumberPhone { get; set; } = string.Empty;
+    public string? NumberPhone { get; set; }
     
     [Required, MaxLength(ModelConstants.UserEmailMaxLength)]
-    public string Email { get; set; } = string.Empty;
+    public string? Email { get; set; }
     
-    [Required, MaxLength(ModelConstants.UserPasswordHashMaxLength)]
-    public string PasswordHash { get; set; } = string.Empty;
+    [Required, Length(ModelConstants.UserPasswordHashMinLength, ModelConstants.UserPasswordHashMaxLength)]
+    public string? PasswordHash { get; set; }
     
     public DateTime BirthDate { get; set; }
     
-    public string Gender { get; set; } 
+    public string? Gender { get; set; } 
     
     public bool Subscribe { get; set; }
 }

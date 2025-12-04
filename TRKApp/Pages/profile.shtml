@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет - Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/profile.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>Личный кабинет</h1>
+        </div>
+        <div id="loading" class="loading">Загрузка...</div>
+        <div id="profile-content" style="display: none;">
+            <div class="profile-info">
+                <div class="info-item">
+                    <span class="info-label">Фамилия:</span>
+                    <span class="info-value" id="surname"></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Имя:</span>
+                    <span class="info-value" id="name"></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value" id="email"></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Телефон:</span>
+                    <span class="info-value" id="phone"></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Дата рождения:</span>
+                    <span class="info-value" id="birthdate"></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Пол:</span>
+                    <span class="info-value" id="gender"></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Подписка:</span>
+                    <span class="info-value" id="subscribe"></span>
+                </div>
+            </div>
+            <button class="logout-btn" id="logout-btn">Выйти из аккаунта</button>
+        </div>
+    </div>
+</main>
+<!--#include virtual="../base/footer.html" -->
+<script src="../scripts/profile.js"></script>
+</body>
+</html>

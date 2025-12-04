@@ -1,0 +1,243 @@
+/* Блок отзывов */
+.reviews-section {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Приглашение к авторизации */
+#login-prompt {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#login-prompt a {
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#login-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Форма отзыва */
+#review-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#review-form h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rating-group {
+    margin-bottom: 20px;
+}
+
+.rating-group label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.star-rating {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.star-rating input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.star-rating label {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.comment-group {
+    margin-bottom: 20px;
+}
+
+.comment-group label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.comment-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
+
+.comment-group textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+#review-form button[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#review-form button[type="submit"]:hover {
+    background-color: #0052a3;
+}
+
+/* Список отзывов */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.review-date {
+    color: #999;
+    font-size: 14px;
+}
+
+.review-ratings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.rating-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-label {
+    color: #666;
+    font-size: 14px;
+}
+
+.rating-stars {
+    color: #ffa500;
+    font-size: 16px;
+}
+
+.review-comment {
+    color: #444;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #f8f8f8;
+    border-left: 3px solid #0066cc;
+    border-radius: 4px;
+}
+
+/* Пустое состояние */
+.reviews-list p {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    padding: 40px 0;
+}
+
+.no-reviews {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    padding: 60px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Секция списка отзывов */
+.reviews-list-section {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.reviews-list-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .reviews-section {
+        padding: 20px;
+    }
+
+    .review-ratings {
+        grid-template-columns: 1fr;
+    }
+
+    .star-rating {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #review-form {
+        padding: 15px;
+    }
+
+    .reviews-list-section {
+        padding: 20px;
+    }
+}

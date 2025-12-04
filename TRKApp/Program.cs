@@ -16,9 +16,14 @@ builder.Services.AddDbContext<DataContext>(options =>
 // Регистрация PasswordHasher
 builder.Services.AddScoped<TRKApp.Services.IPasswordHasher, TRKApp.Services.PasswordHasher>();
 
+// Регистрация UserService
+builder.Services.AddScoped<IUserService, UserService>();
+
+// Поддержка контроллеров
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
@@ -113,6 +118,7 @@ app.MapGet("/", () => Results.Redirect("/pages/index.shtml"));
 app.UseRouting();
 app.UseAuthorization();
 
+app.MapControllers(); // Добавляем маршруты для контроллеров
 app.MapRazorPages();
 
 app.Run();

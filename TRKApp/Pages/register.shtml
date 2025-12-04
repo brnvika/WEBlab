@@ -29,12 +29,10 @@
                pattern="(^[^\s@]+@[^\s@]+\.[^\s@]+$)"
                title="Электронная почта" required/>
 
-        <label for="password">Пароль</label>
-        <input id="password" name="password" type="password" required
-               pattern="(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).*" 
-               title="Минимум 8 символов, заглавная и строчная буквы, цифра и спецсимвол" autocomplete="new-password" />
-    
-        <label for="password_confirm">Подтвердите пароль</label>
+      <label for="password">Пароль</label>
+      <input id="password" name="password" type="password" required
+             pattern="^(?=.*[a-zа-я])(?=.*[A-ZА-Я])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>/?])(?!.*\s)[a-zA-Zа-яА-Я\d!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>/?]{8,128}$" 
+             title="Пароль: 8-128 символов, заглавная и строчная буквы (латиница/кириллица), цифра, спецсимвол, без пробелов" autocomplete="new-password" />        <label for="password_confirm">Подтвердите пароль</label>
         <input id="password_confirm" name="password_confirm" type="password" required autocomplete="new-password" />
       </fieldset>
     
@@ -74,5 +72,6 @@
     </form>
 </main>
 <!--#include virtual="../base/footer.html" -->
+<script src="../scripts/register.js"></script>
 </body>
 </html>

@@ -36,8 +36,11 @@ public sealed class UpdateUserDto
     /// <summary>
     /// Пароль (опционально, только если нужно изменить)
     /// </summary>
-    [MinLength(8)]
-    public string? Password { get; set; }
+    [MinLength(8, ErrorMessage = "Пароль должен содержать не менее 8 символов")]
+    [MaxLength(128, ErrorMessage = "Пароль должен содержать не более 128 символов")]
+    [RegularExpression(@"^(?=.*[a-zа-я])(?=.*[A-ZА-Я])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':""\\|,.<>/?])(?!.*\s)[a-zA-Zа-яА-Я\d!@#$%^&*()_+\-=\[\]{};':""\\|,.<>/?]{8,128}$", 
+        ErrorMessage = "Пароль должен содержать: заглавную и строчную буквы (латиница/кириллица), цифру, спецсимвол, без пробелов")]
+    public string? Password { get; init; }
 
     /// <summary>
     /// Дата рождения
