@@ -18,9 +18,28 @@ public class UsersController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] CreateUserDto dto)
     {
+        Console.WriteLine($"Получен запрос регистрации для email: {dto?.Email}");
+        
         if (!ModelState.IsValid)
         {
-            return BadRequest(ModelState);
+            Console.WriteLine("ModelState невалиден:");
+            foreach (var error in ModelState)
+            {
+                Console.WriteLine($"  {error.Key}: {string.Join(", ", error.Value?.Errors.Select(e => e.ErrorMessage) ?? Array.Empty<string>())}");
+            }
+            var errors = ModelState
+                .Where(x => x.Value?.Errors.Count > 0)
+                .ToDictionary(
+                    kvp => kvp.Key,
+                    kvp => kvp.Value?.Errors.Select(e => 
+                    {
+                        // Переводим стандартные сообщения на русский
+                        if (e.ErrorMessage.Contains("required")) return "Обязательное поле";
+                        if (e.ErrorMessage.Contains("invalid")) return "Неверный формат";
+                        return e.ErrorMessage;
+                    }).ToArray() ?? Array.Empty<string>()
+                );
+            return BadRequest(new { error = "Проверьте правильность заполнения полей", errors });
         }
 
         try
@@ -30,11 +49,30 @@ public class UsersController : ControllerBase
         }
         catch (InvalidOperationException ex)
         {
+            Console.WriteLine($"InvalidOperationException: {ex.Message}");
+            // Проверяем тип ошибки для более точного сообщения
+            if (ex.Message.Contains("email") || ex.Message.Contains("Email"))
+            {
+                return Conflict(new { error = "Пользователь с таким email уже зарегистрирован" });
+            }
+            else if (ex.Message.Contains("phone") || ex.Message.Contains("Phone"))
+            {
+                return Conflict(new { error = "Пользователь с таким номером телефона уже зарегистрирован" });
+            }
+            else
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+        catch (ArgumentException ex)
+        {
             return BadRequest(new { error = ex.Message });
         }
         catch (Exception ex)
         {
-            return StatusCode(500, new { error = "Ошибка регистрации: " + ex.Message });
+            // Логируем ошибку для отладки
+            Console.WriteLine($"Registration error: {ex.Message}");
+            return StatusCode(500, new { error = "Произошла ошибка при регистрации. Попробуйте позже." });
         }
     }
 
@@ -50,34 +88,19 @@ public class UsersController : ControllerBase
         {
             var result = await _mediator.Send(new LoginUserCommand { User = dto });
 
-            Response.Cookies.Append("userId", result.UserId.ToString(), new CookieOptions
+            var cookieOptions = new CookieOptions
             {
                 HttpOnly = false,
                 Secure = false,
                 SameSite = SameSiteMode.Lax,
+                Path = "/",
                 Expires = DateTimeOffset.UtcNow.AddDays(7)
-            });
-            Response.Cookies.Append("userName", result.Name ?? "", new CookieOptions
-            {
-                HttpOnly = false,
-                Secure = false,
-                SameSite = SameSiteMode.Lax,
-                Expires = DateTimeOffset.UtcNow.AddDays(7)
-            });
-            Response.Cookies.Append("userSurname", result.Surname ?? "", new CookieOptions
-            {
-                HttpOnly = false,
-                Secure = false,
-                SameSite = SameSiteMode.Lax,
-                Expires = DateTimeOffset.UtcNow.AddDays(7)
-            });
-            Response.Cookies.Append("userEmail", result.Email ?? "", new CookieOptions
-            {
-                HttpOnly = false,
-                Secure = false,
-                SameSite = SameSiteMode.Lax,
-                Expires = DateTimeOffset.UtcNow.AddDays(7)
-            });
+            };
+            
+            Response.Cookies.Append("userId", result.UserId.ToString(), cookieOptions);
+            Response.Cookies.Append("userName", result.Name ?? "", cookieOptions);
+            Response.Cookies.Append("userSurname", result.Surname ?? "", cookieOptions);
+            Response.Cookies.Append("userEmail", result.Email ?? "", cookieOptions);
             
             return Ok(new 
             { 

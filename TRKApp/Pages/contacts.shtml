@@ -38,7 +38,7 @@
 
         <div class="input-form">
             <label for="message" class="form-label">Какой у вас вопрос:</label>
-            <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="Опишите ваш вопрос..."></textarea>
+            <textarea id="message" name="question" class="form-textarea" rows="5" required placeholder="Опишите ваш вопрос..."></textarea>
         </div>
     <div class="agreement-form">
         <input type="checkbox" id="agreement" name="agreement" class="form-checkbox" required>
@@ -61,5 +61,6 @@
     </section>
 </main>
 <!--#include virtual="../base/footer.html" -->
+<script src="/scripts/contacts.js"></script>
 </body>
 </html>

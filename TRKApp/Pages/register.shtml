@@ -72,6 +72,6 @@
     </form>
 </main>
 <!--#include virtual="../base/footer.html" -->
-<script src="../scripts/register.js"></script>
+<script src="../scripts/register.js?v=2"></script>
 </body>
 </html>

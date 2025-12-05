@@ -20,9 +20,31 @@ builder.Services.AddScoped<TRKApp.Services.IPasswordHasher, TRKApp.Services.Pass
 builder.Services.AddScoped<IUserService, UserService>();
 
 // Поддержка контроллеров
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
+    });
+
+// Добавляем логирование для отладки
+builder.Services.AddLogging(builder => builder.AddConsole());
 
 var app = builder.Build();
+
+// Применение миграций при запуске
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<DataContext>();
+    try
+    {
+        dbContext.Database.Migrate();
+        Console.WriteLine("Database migrations applied successfully.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error applying migrations: {ex.Message}");
+    }
+}
 
 if (!app.Environment.IsDevelopment())
 {
@@ -31,6 +53,25 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Логирование всех HTTP запросов
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {context.Request.Method} {context.Request.Path}");
+    if (context.Request.Path.StartsWithSegments("/api"))
+    {
+        Console.WriteLine($"API запрос: {context.Request.Method} {context.Request.Path}");
+        if (context.Request.ContentLength > 0)
+        {
+            context.Request.EnableBuffering();
+            var body = await new StreamReader(context.Request.Body).ReadToEndAsync();
+            context.Request.Body.Position = 0;
+            Console.WriteLine($"Body: {body}");
+        }
+    }
+    await next();
+    Console.WriteLine($"Ответ: {context.Response.StatusCode}");
+});
 
 // Настройка статических файлов из разных папок
 app.UseStaticFiles(); // Обслуживает wwwroot по умолчанию

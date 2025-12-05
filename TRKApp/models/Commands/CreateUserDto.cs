@@ -63,4 +63,9 @@ public sealed class CreateUserDto
     /// Подписка на рассылку
     /// </summary>
     public bool Subscribe { get; init; }
+
+    /// <summary>
+    /// Согласие с политикой конфиденциальности
+    /// </summary>
+    public bool AgreeToTerms { get; init; }
 }

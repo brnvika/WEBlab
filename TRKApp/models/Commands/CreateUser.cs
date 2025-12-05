@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using TRKApp.Services;
 
@@ -31,6 +32,22 @@ public sealed class CreateUserCommandHandler : IRequestHandler<CreateUserCommand
 
     public async Task<Guid> Handle(CreateUserCommand request, CancellationToken cancellationToken)
     {
+        // Проверка уникальности email
+        var emailExists = await _dataContext.Users
+            .AnyAsync(u => u.Email == request.User.Email, cancellationToken);
+        if (emailExists)
+        {
+            throw new InvalidOperationException("Пользователь с таким email уже зарегистрирован");
+        }
+
+        // Проверка уникальности номера телефона
+        var phoneExists = await _dataContext.Users
+            .AnyAsync(u => u.NumberPhone == request.User.NumberPhone, cancellationToken);
+        if (phoneExists)
+        {
+            throw new InvalidOperationException("Пользователь с таким номером телефона уже зарегистрирован");
+        }
+
         var user = new User
         {
             UserId = Guid.NewGuid(),
@@ -39,13 +56,28 @@ public sealed class CreateUserCommandHandler : IRequestHandler<CreateUserCommand
             NumberPhone = request.User.NumberPhone,
             Email = request.User.Email,
             PasswordHash = _passwordHasher.HashPassword(request.User.Password!),
-            BirthDate = request.User.BirthDate,
+            BirthDate = request.User.BirthDate.Kind == DateTimeKind.Unspecified 
+                ? DateTime.SpecifyKind(request.User.BirthDate, DateTimeKind.Utc)
+                : request.User.BirthDate.ToUniversalTime(),
             Gender = request.User.Gender,
             Subscribe = request.User.Subscribe
         };
 
         await _dataContext.Users.AddAsync(user, cancellationToken);
-        await _dataContext.SaveChangesAsync(cancellationToken);
+        
+        try
+        {
+            await _dataContext.SaveChangesAsync(cancellationToken);
+        }
+        catch (DbUpdateException ex)
+        {
+            // Обработка ошибок базы данных
+            if (ex.InnerException?.Message.Contains("duplicate key") == true)
+            {
+                throw new InvalidOperationException("Пользователь с такими данными уже существует");
+            }
+            throw new InvalidOperationException("Ошибка при сохранении данных. Попробуйте еще раз.");
+        }
 
         return user.UserId;
     }

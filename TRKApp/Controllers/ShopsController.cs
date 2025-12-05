@@ -28,4 +28,16 @@ public class ShopsController : ControllerBase
 
         return Ok(shop);
     }
+
+    [HttpGet("catalog")]
+    public async Task<IActionResult> GetCatalog([FromQuery] string? category = null, [FromQuery] string? sortBy = null)
+    {
+        var query = new GetShopsCatalog 
+        { 
+            CategoryFilter = category,
+            SortBy = sortBy 
+        };
+        var shops = await _mediator.Send(query);
+        return Ok(shops);
+    }
 }

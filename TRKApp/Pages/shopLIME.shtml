@@ -131,14 +131,18 @@
                     <button type="submit">Отправить отзыв</button>
                 </div>
             </form>
-            <div id="reviews-section">
-                <h2>Отзывы о магазине</h2>
-                <div id="reviews-list"></div>
-            </div>
             <div class="shop-banner">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="banner">
                     <img src="" alt="Баннер магазина">
                 </a>
+            </div>
+        </div>
+        
+        <!-- Список отзывов -->
+        <div class="reviews-list-section">
+            <h2>Отзывы покупателей</h2>
+            <div id="reviews-list" class="reviews-list">
+                <p>Загрузка отзывов...</p>
             </div>
         </div>
     </div>

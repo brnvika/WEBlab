@@ -27,6 +27,13 @@ public class Shop
     [Required]
     public string ShopAdvert { get; set; } = string.Empty;
 
-    // Навигационное свойство для характеристик
+    [Required]
+    public string ShopCardImage { get; set; } = string.Empty;
+
+    // Внешний ключ для категории (nullable, так как у существующих магазинов еще нет категории)
+    public Guid? CategoryId { get; set; }
+
+    // Навигационные свойства
+    public Category? Category { get; set; }
     public ICollection<ShopCharacteristic> Characteristics { get; set; } = new List<ShopCharacteristic>();
 }
