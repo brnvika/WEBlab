@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TRKApp.Models;
 
 public class Shop
 {
@@ -36,4 +37,5 @@ public class Shop
     // Навигационные свойства
     public Category? Category { get; set; }
     public ICollection<ShopCharacteristic> Characteristics { get; set; } = new List<ShopCharacteristic>();
+    public ICollection<RentalSpace> RentalSpaces { get; set; } = new List<RentalSpace>();
 }

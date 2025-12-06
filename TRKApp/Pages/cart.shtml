@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина - ТРК Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div id="auth-check-cart" style="display: none;">
+        <div class="cart-container">
+            <div class="auth-required">
+                <h1>⚠️ Требуется авторизация</h1>
+                <p>Для просмотра корзины необходимо войти в аккаунт.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 30px;">
+                    <a href="/pages/authorization.shtml" class="btn-auth-action">Войти</a>
+                    <a href="/pages/register.shtml" class="btn-auth-action">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart-main-content" class="cart-container" style="display: none;">
+        <h1>Корзина</h1>
+        
+        <div id="message-container"></div>
+        
+        <div id="cart-content">
+            <!-- Содержимое корзины будет загружено через JavaScript -->
+        </div>
+    </div>
+</main>
+<script src="../scripts/cart.js"></script>
+</body>
+<!--#include virtual="../base/footer.html" -->
+</html>

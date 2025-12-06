@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аренда торговых площадей - ТРК Атриум</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/aside.css">
+    <link rel="stylesheet" href="../styles/rentalSpaces.css">
+</head>
+<body>
+<!--#include virtual="../base/header.html" -->
+<!--#include virtual="../base/aside.html" -->
+<main>
+    <div id="auth-check" style="display: none;">
+        <div class="rental-spaces-container">
+            <div class="auth-required">
+                <h1>⚠️ Требуется авторизация</h1>
+                <p>Для просмотра доступных торговых площадей необходимо войти в аккаунт.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 30px;">
+                    <a href="/pages/authorization.shtml" class="btn-auth-action">Войти</a>
+                    <a href="/pages/register.shtml" class="btn-auth-action">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content-area" class="rental-spaces-container" style="display: none;">
+        <h1>Аренда торговых площадей</h1>
+        
+        <div class="filter-section">
+            <h3>Фильтр по категории</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="">Все</button>
+                <button class="filter-btn" data-category="Бутик">Бутик</button>
+                <button class="filter-btn" data-category="Павильон">Павильон</button>
+                <button class="filter-btn" data-category="Островок">Островок</button>
+                <button class="filter-btn" data-category="Корнер">Корнер</button>
+            </div>
+        </div>
+
+        <div id="spaces-grid" class="spaces-grid">
+            <!-- Карточки торговых площадей будут добавлены через JavaScript -->
+        </div>
+    </div>
+</main>
+<script src="../scripts/rentalSpaces.js"></script>
+</body>
+<!--#include virtual="../base/footer.html" -->
+</html>

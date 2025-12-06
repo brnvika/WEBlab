@@ -13,4 +13,7 @@ public class DataContext : DbContext
     public virtual DbSet<ShopCharacteristic> ShopCharacteristics { get; set; }
     public virtual DbSet<Category> Categories { get; set; }
     public virtual DbSet<Contact> Contacts { get; set; }
+    public virtual DbSet<RentalSpace> RentalSpaces { get; set; }
+    public virtual DbSet<Cart> Carts { get; set; }
+    public virtual DbSet<CartItem> CartItems { get; set; }
 }
