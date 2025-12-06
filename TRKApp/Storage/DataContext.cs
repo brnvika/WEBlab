@@ -16,4 +16,5 @@ public class DataContext : DbContext
     public virtual DbSet<RentalSpace> RentalSpaces { get; set; }
     public virtual DbSet<Cart> Carts { get; set; }
     public virtual DbSet<CartItem> CartItems { get; set; }
+    public virtual DbSet<ShopImage> ShopImages { get; set; }
 }

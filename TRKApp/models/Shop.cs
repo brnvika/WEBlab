@@ -38,4 +38,5 @@ public class Shop
     public Category? Category { get; set; }
     public ICollection<ShopCharacteristic> Characteristics { get; set; } = new List<ShopCharacteristic>();
     public ICollection<RentalSpace> RentalSpaces { get; set; } = new List<RentalSpace>();
+    public ICollection<ShopImage> Images { get; set; } = new List<ShopImage>();
 }

@@ -71,18 +71,26 @@ function displayShops(shops) {
     }
     
     catalogGrid.innerHTML = shops.map(shop => createShopCard(shop)).join('');
+    
+    // Инициализируем слайдеры после отрисовки
+    initializeSliders();
 }
 
 function createShopCard(shop) {
     const categoryClass = getCategoryClass(shop.categoryName);
     const shopPageUrl = getShopPageUrl(shop.shopName);
     
+    // Используем imagePaths если есть, иначе fallback на shopCardImage
+    const images = shop.imagePaths && shop.imagePaths.length > 0 
+        ? shop.imagePaths 
+        : [shop.shopCardImage];
+    
+    const sliderHtml = createImageSlider(images, shop.shopName);
+    
     return `
         <div class="store-card-container" data-category="${categoryClass}">
             <div class="store-card">
-                <a href="${shopPageUrl}">
-                    <img src="${shop.shopCardImage}" alt="${shop.shopName}" class="store-card__background-img">
-                </a>
+                ${sliderHtml}
                 <div class="store-card__logo">
                     <p>${shop.shopName}</p>
                 </div>
@@ -91,13 +99,110 @@ function createShopCard(shop) {
                         <h3 class="store-card__name">${shop.shopName}</h3>
                         <p class="store-card__category">${shop.categoryName || 'Без категории'}</p>
                     </div>
-                    <a href="#" class="store-card__map-button">
+                    <a href="${shopPageUrl}" class="store-card__map-button">
                         НА КАРТЕ
                     </a>
                 </div>
             </div>
         </div>
     `;
+}
+
+function createImageSlider(images, shopName) {
+    const sliderId = `slider-${shopName.replace(/\s+/g, '-')}`;
+    
+    console.log(`Создаю слайдер для ${shopName}, изображений: ${images.length}`, images);
+    
+    const imagesHtml = images.map((img, index) => 
+        `<img src="${img}" alt="${shopName} ${index + 1}" class="slider-image ${index === 0 ? 'active' : ''}">`
+    ).join('');
+    
+    const indicatorsHtml = images.map((_, index) => 
+        `<span class="slider-indicator ${index === 0 ? 'active' : ''}" data-index="${index}"></span>`
+    ).join('');
+    
+    console.log(`Условие images.length > 1: ${images.length} > 1 = ${images.length > 1}`);
+    
+    return `
+        <div class="slider-container" id="${sliderId}">
+            <div class="slider-images">
+                ${imagesHtml}
+            </div>
+            ${images.length > 1 ? `
+                <button class="slider-btn slider-btn-prev" aria-label="Предыдущее изображение">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="slider-btn slider-btn-next" aria-label="Следующее изображение">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="slider-indicators">
+                    ${indicatorsHtml}
+                </div>
+            ` : ''}
+        </div>
+    `;
+}
+
+function initializeSliders() {
+    const sliders = document.querySelectorAll('.slider-container');
+    
+    sliders.forEach(slider => {
+        const images = slider.querySelectorAll('.slider-image');
+        const indicators = slider.querySelectorAll('.slider-indicator');
+        const prevBtn = slider.querySelector('.slider-btn-prev');
+        const nextBtn = slider.querySelector('.slider-btn-next');
+        
+        if (images.length <= 1) return;
+        
+        let currentIndex = 0;
+        
+        const showSlide = (index) => {
+            images.forEach(img => img.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            images[index].classList.add('active');
+            indicators[index].classList.add('active');
+        };
+        
+        const nextSlide = () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showSlide(currentIndex);
+        };
+        
+        const prevSlide = () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showSlide(currentIndex);
+        };
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                prevSlide();
+            });
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                nextSlide();
+            });
+        }
+        
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                currentIndex = index;
+                showSlide(currentIndex);
+            });
+        });
+    });
 }
 
 function getCategoryClass(categoryName) {

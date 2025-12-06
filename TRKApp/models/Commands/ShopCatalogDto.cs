@@ -7,4 +7,5 @@ public class ShopCatalogDto
     public int ReviewCount { get; set; }
     public decimal AverageRating { get; set; }
     public decimal PopularityScore { get; set; }
+    public List<string> ImagePaths { get; set; } = new List<string>();
 }
